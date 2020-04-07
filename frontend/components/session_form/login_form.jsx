@@ -10,7 +10,7 @@ class LoginForm extends React.Component {
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
-
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentWillUnmount() {
@@ -34,12 +34,22 @@ class LoginForm extends React.Component {
         });
     }
 
+    handleClick(e) {
+        const demoUser = {email: 'happyalpaca@gmail.com', password: 'starwars'};
+        this.props.login(demoUser).then(() => this.props.history.push('/'));
+    }
+
     render() {
         const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
         return (
             <div className="session-form">
                 <h1>Welcome back!</h1>
                 <h2>It's about time for another camping trip</h2>
+
+                <button id="demo-user-button" onClick={this.handleClick}>Demo User</button>
+
+                <h3>or</h3>
+
                 <ul className="errors">{errors}</ul>
                 <form>
                     
@@ -56,6 +66,7 @@ class LoginForm extends React.Component {
 
                 <div className="redirect">
                     <span>Don't have a PacaCamp account?</span>
+                    &nbsp;
                     <Link to='/signup'>Sign Up!</Link>
                 </div>
             </div>

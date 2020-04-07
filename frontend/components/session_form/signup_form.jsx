@@ -64,6 +64,7 @@ class SignupForm extends React.Component {
 
                 <div className="redirect">
                     <span>Have an account?</span>
+                    &nbsp;
                     <Link to='/login'>Sign in</Link>
                 </div>
             </div>
