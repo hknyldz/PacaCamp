@@ -19,7 +19,7 @@ const NavBar = ({ currentUser, logout }) => {
                     <img className="dropdown-icon" src="" alt=""/>
                     <div className="dropdown-menu">
                         <a href="">Manage account</a>
-                        <a href="" onClick={logout}>Log out</a>    
+                        <button onClick={logout}>Log out</button>    
                     </div>
                 </div>
             </div>
@@ -35,6 +35,7 @@ const NavBar = ({ currentUser, logout }) => {
     
             <div className="guest-menu">
                 <Link to="/login">Log in</Link>
+                &nbsp;
                 <Link to="/signup">Sign up</Link>
             </div>
         </nav> 
