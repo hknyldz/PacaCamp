@@ -37,20 +37,28 @@ class LoginForm extends React.Component {
     render() {
         const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
         return (
-            <>
-                <h1>Log In!</h1>
-                <ul>{errors}</ul>
+            <div className="session-form">
+                <h1>Welcome back!</h1>
+                <h2>It's about time for another camping trip</h2>
+                <ul className="errors">{errors}</ul>
                 <form>
-                    <label>Email:
-                        <input type="text" value={this.state.email} onChange={this.handleInput('email')} />
-                    </label>
-                    <label>Password:
-                        <input type="password" value={this.state.password} onChange={this.handleInput('password')} />
-                    </label>
-                    <button type="submit" onClick={this.handleSubmit}>Log In!</button>
+                    
+                    <div className="form-input">
+                        <input type="text" placeholder="Email address" value={this.state.email} onChange={this.handleInput('email')} />
+                    </div>
+
+                    <div className="form-input">
+                        <input type="password" placeholder="Password" value={this.state.password} onChange={this.handleInput('password')} />
+                    </div>
+
+                    <button className="login-button" type="submit" onClick={this.handleSubmit}>Log In</button>
                 </form>
-                <Link to='/signup'> Sign Up </Link>
-            </>
+
+                <div className="redirect">
+                    <span>Don't have a PacaCamp account?</span>
+                    <Link to='/signup'>Sign Up!</Link>
+                </div>
+            </div>
         )
     }
 }

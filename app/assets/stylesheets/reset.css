@@ -1,0 +1,15 @@
+html, main, body, section, article, div, header, nav, form,
+p, span, input, textarea, h1, h2, h3, h4, a, ul, ol, li, 
+figcaption, footer, button, label {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: "Calibre", Helvetica, Arial, Helvetica, sans-serif;
+    color: #333333;
+    box-sizing: inherit;
+    background: transparent
+}
+
+ol, ul {
+	list-style: none;
+}

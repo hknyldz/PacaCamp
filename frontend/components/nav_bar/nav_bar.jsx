@@ -34,8 +34,8 @@ const NavBar = ({ currentUser, logout }) => {
             
     
             <div className="guest-menu">
-                <Link to="/login">Login</Link>
-                <Link to="/signup">Sign up!</Link>
+                <Link to="/login">Log in</Link>
+                <Link to="/signup">Sign up</Link>
             </div>
         </nav> 
     );

@@ -38,26 +38,35 @@ class SignupForm extends React.Component {
     render() {
         const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
         return (
-            <>
-                <h1>Sign Up!</h1>
-                <ul>{errors}</ul>
+            <div className="session-form">
+                <h1>Join PacaCamp</h1>
+                <h2>Discover the best camping near me</h2>
+
+                <ul className="errors">{errors}</ul>
+
                 <form>
-                    <label>First name:
-                        <input type="text" value={this.state.first_name} onChange={this.handleInput('first_name')} />
-                    </label>
-                    <label>Last name:
-                        <input type="text" value={this.state.last_name} onChange={this.handleInput('last_name')} />
-                    </label>
-                    <label>Email:
-                        <input type="text" value={this.state.email} onChange={this.handleInput('email')} />
-                    </label>
-                    <label>Password:
-                        <input type="password" value={this.state.password} onChange={this.handleInput('password')} />
-                    </label>
-                    <button type="submit" onClick={this.handleSubmit}>Sign Up!</button>
+                    <div className="name-input">
+                        <input type="text" placeholder="First name..." value={this.state.first_name} onChange={this.handleInput('first_name')} />
+
+                        <input type="text" placeholder="Last name..." value={this.state.last_name} onChange={this.handleInput('last_name')} />
+                    </div>
+
+                    <div className="form-input">
+                        <input type="text" placeholder="Email address..." value={this.state.email} onChange={this.handleInput('email')} />
+                    </div>
+
+                    <div className="form-input">
+                        <input type="password" placeholder="Password..." value={this.state.password} onChange={this.handleInput('password')} />
+                    </div>
+                    
+                    <button className="signup-button" type="submit" onClick={this.handleSubmit}>Join PacaCamp</button>
                 </form>
-                <Link to='/login'>Log In</Link>
-            </>
+
+                <div className="redirect">
+                    <span>Have an account?</span>
+                    <Link to='/login'>Sign in</Link>
+                </div>
+            </div>
         )
     }
 }
