@@ -1,9 +1,7 @@
 class User < ApplicationRecord
  
-    validates :username, :email, :password_digest, :session_token, presence: true
-    validates :first_name, presence: { message: "First name cannot be blank." }
-    validates :last_name, presence: { message: "Last name cannot be blank." }
-    validates :username, :email, :session_token, uniqueness: true
+    validates :email, :first_name, :last_name, :password_digest, :session_token, presence: true
+    validates :email, :session_token, uniqueness: true
     validates :password, length: { minimum: 6 }, allow_nil: true
 
     after_initialize :ensure_session_token
