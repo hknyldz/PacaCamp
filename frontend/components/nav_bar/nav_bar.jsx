@@ -7,7 +7,7 @@ const NavBar = ({ currentUser, logout }) => {
     const protectedNav = () => (
         <nav className="navbar">
             <div className="logo">
-                <img src="" alt=""/>
+                <h1>PacaCamp</h1>
             </div>
 
             <div className="user-menu">
@@ -16,11 +16,14 @@ const NavBar = ({ currentUser, logout }) => {
                 </div>
 
                 <div className="dropdown-container">
-                    <img className="dropdown-icon" src="" alt=""/>
-                    <div className="dropdown-menu">
-                        <a href="">Manage account</a>
-                        <button onClick={logout}>Log out</button>    
-                    </div>
+                    <img src={window.logo} alt="logo"/>
+                    
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="">Manage account</a></li>
+                        <li className="divider"></li>
+                        <li><button 
+                        className="dropdown-item" onClick={logout}>Log out</button></li>    
+                    </ul>
                 </div>
             </div>
         </nav>      
@@ -29,14 +32,13 @@ const NavBar = ({ currentUser, logout }) => {
     const authNav = () => (
         <nav className="navbar">
             <div className="logo">
-                <img src="" alt="" />
+                <h1>PacaCamp</h1>
             </div>
             
     
             <div className="guest-menu">
-                <Link to="/login">Log in</Link>
-                &nbsp;
-                <Link to="/signup">Sign up</Link>
+                <Link id="login-link" to="/login">Log in</Link>
+                <Link id="signup-link" to="/signup">Sign up</Link>
             </div>
         </nav> 
     );

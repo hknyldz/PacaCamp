@@ -6,7 +6,6 @@ import AuthRoute from '../util/route_util';
 
 const App = () => (
     <div>
-        <h1>PacaCamp</h1>
         <NavBarContainer />
         <AuthRoute exact path='/signup' component={SignupFormContainer}></AuthRoute>
         <AuthRoute exact path='/login' component={LoginFormContainer}></AuthRoute>

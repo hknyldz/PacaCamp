@@ -1,0 +1,93 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.42;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.guest-menu a {
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.guest-menu a:hover {
+    border-bottom: 3px solid #40d9ac;
+}
+
+#signup-link {
+    margin-right: 30px;
+}
+
+.user-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trips a {
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.trips a:hover {
+    border-bottom: 3px solid #40d9ac;
+}
+
+.dropdown-container {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.dropdown-container:hover > .dropdown-menu {
+    display: block;
+} 
+
+.dropdown-item {
+    position: relative;
+    left: 30px;
+    font-size: 14px;
+    display: block;
+    padding: 20px 0px;
+    transition: transform 0.25s ease-out;
+}
+
+.dropdown-item:hover {
+    cursor: pointer;
+    transform: translateX(26px);
+}
+
+.divider {
+    position: relative;
+    left: 30px;
+    border-bottom: 1px solid #EBEBEB;
+    width: 70%;
+}
+
+
+

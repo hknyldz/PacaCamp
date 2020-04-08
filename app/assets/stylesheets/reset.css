@@ -5,6 +5,8 @@ figcaption, footer, button, label {
 	padding: 0;
 	border: 0;
     font-family: "Calibre", Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    vertical-align: baseline;
     color: #333333;
     box-sizing: inherit;
     background: transparent
