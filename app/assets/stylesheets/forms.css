@@ -5,6 +5,8 @@
     flex-direction: column;
     width: 350px;
     margin: 0 auto;
+    position: relative;
+    top: 70px;
 }
 
 .session-form form {

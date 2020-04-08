@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-
 const NavBar = ({ currentUser, logout }) => {
     const protectedNav = () => (
         <nav className="navbar">
-            <div className="logo">
-                <h1>PacaCamp</h1>
+            <div className="pacacamp">
+                <Link to="/">PacaCamp</Link>
             </div>
 
             <div className="user-menu">
@@ -31,8 +29,8 @@ const NavBar = ({ currentUser, logout }) => {
 
     const authNav = () => (
         <nav className="navbar">
-            <div className="logo">
-                <h1>PacaCamp</h1>
+            <div className="pacacamp">
+                <Link to="/">PacaCamp</Link>
             </div>
             
     
