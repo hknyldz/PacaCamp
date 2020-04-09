@@ -5,6 +5,7 @@ import SignupFormContainer from './session_form/signup_form_container';
 import AuthRoute from '../util/route_util';
 import { Route, Switch } from "react-router";
 import Splash from './splash';
+import Footer from "./footer";
 
 const App = () => (
     <div>
@@ -12,6 +13,7 @@ const App = () => (
         <Route exact path='/'component ={Splash}></Route>
         <AuthRoute exact path='/signup' component={SignupFormContainer}></AuthRoute>
         <AuthRoute exact path='/login' component={LoginFormContainer}></AuthRoute>
+        <Footer />
     </div>
 );
 

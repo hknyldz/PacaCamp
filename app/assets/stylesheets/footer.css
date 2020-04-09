@@ -1,0 +1,84 @@
+.footer {
+    position: relative;
+    top: 115px;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+}
+
+.footer .about {
+    margin-top: 45px;
+}
+
+.footer .body {
+    padding: 0px 150px;
+}
+
+.footer .pacacamp img {
+    height: 23px;
+}
+
+.about-us-and-slogan {
+    display: flex;
+    justify-content: space-between;
+    margin: 34px 0px;
+}
+
+.footer .about-us {
+    width: 30%;
+}
+
+.footer .slogan {
+    width: 60%;
+}
+
+.about-us-and-slogan h2 {
+    font-size: 14.5px;
+    margin-bottom: 24px;
+    line-height: 1.35;
+}
+
+.about-us-and-slogan p {
+    color: #757575;
+    font-weight: 300;
+    font-size: 14.5px;
+} 
+
+.about-us { 
+    line-height: 2.5;
+}
+
+.slogan p {
+    line-height: 1.9;
+}
+
+.footer .divider {
+    margin: 0px 150px;
+    border-top: 1px solid #ebebeb;;
+}
+
+.footer .legal-info-container {
+    padding: 0px 150px;
+}
+
+.footer .legal-info {
+    padding: 34px 0px;
+    color: #757575;
+    font-size: 13.5px;
+    font-weight: 300;
+}
+
+.message-container {
+    background-color: black;
+    padding: 24px 150px;
+}
+
+.message {
+    color: white; 
+    font-size: 12.5px;
+    font-weight: 300;
+}
+
+.footer .heart {
+    font-size: 14px;
+}
+
