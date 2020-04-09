@@ -35,7 +35,7 @@ class LoginForm extends React.Component {
     }
 
     handleClick(e) {
-        const demoUser = {email: 'happyalpaca@gmail.com', password: 'starwars'};
+        const demoUser = {email: 'happyalpaca@aa.io', password: 'humming'};
         this.props.login(demoUser).then(() => this.props.history.push('/'));
         this.setState({
             email: '',
@@ -51,9 +51,9 @@ class LoginForm extends React.Component {
                 <h2>It's about time for another camping trip</h2>
 
                 <button id="demo-user-button" onClick={this.handleClick}>Demo User</button>
-
+                
                 <h3>or</h3>
-
+             
                 <ul className="errors">{errors}</ul>
                 <form>
                     
