@@ -9,11 +9,10 @@
     font-size: 16px;
     line-height: 1.42;
     position: fixed;
+    z-index: 1;
+    background-color: #ffffff;;
 }
 
-.navbar a {
-    text-decoration: none;
-}
 
 .pacacamp a {
     font-size: 30px;
@@ -24,6 +23,8 @@
 .guest-menu a {
     padding: 5px;
     margin: 0px 5px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .guest-menu a:hover {
@@ -43,34 +44,38 @@
 .trips a {
     padding: 5px;
     margin: 0px 5px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .trips a:hover {
     border-bottom: 3px solid #40d9ac;
 }
 
-.dropdown-container {
+.navbar .dropdown-container {
     position: relative;
-    top: 10px;
+    top: 3px;
     display: inline-block;
     padding-right: 30px;
+    background-color: #ffffff;
 }
 
-.dropdown-menu {
+.navbar .dropdown-menu {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: 30px;
     border: 1px solid #EBEBEB;
     border-radius: 5px;
     width: 200px;
+    background-color: #ffffff;
 }
 
 .dropdown-container:hover > .dropdown-menu {
     display: block;
 } 
 
-.dropdown-item {
+.navbar .dropdown-item {
     position: relative;
     left: 30px;
     font-size: 14px;
@@ -79,16 +84,20 @@
     transition: transform 0.25s ease-out;
 }
 
-.dropdown-item:hover {
+.navbar .dropdown-item:hover {
     cursor: pointer;
     transform: translateX(26px);
 }
 
-.divider {
+.navbar .divider {
     position: relative;
     left: 30px;
     border-bottom: 1px solid #EBEBEB;
     width: 70%;
+}
+
+.navbar img {
+    height: 43px;
 }
 
 

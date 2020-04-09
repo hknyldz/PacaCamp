@@ -8,10 +8,14 @@ figcaption, footer, button, label {
     font-size: 100%;
     vertical-align: baseline;
     color: #333333;
-    box-sizing: inherit;
-    background: transparent
+    background: transparent;
+    box-sizing: border-box;
 }
 
 ol, ul {
 	list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

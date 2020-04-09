@@ -52,7 +52,7 @@ class LoginForm extends React.Component {
 
                 <button id="demo-user-button" onClick={this.handleClick}>Demo User</button>
                 
-                <h3>or</h3>
+                <span>or</span>
              
                 <ul className="errors">{errors}</ul>
                 <form>
@@ -71,7 +71,7 @@ class LoginForm extends React.Component {
                 <div className="redirect">
                     <span>Don't have a PacaCamp account?</span>
                     &nbsp;
-                    <Link to='/signup'>Sign Up!</Link>
+                    <strong><Link to='/signup'>Sign Up!</Link></strong>
                 </div>
             </div>
         )

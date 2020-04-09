@@ -3,10 +3,13 @@ import NavBarContainer from './nav_bar/nav_bar_container';
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import AuthRoute from '../util/route_util';
+import { Route, Switch } from "react-router";
+import Splash from './splash';
 
 const App = () => (
     <div>
         <NavBarContainer />
+        <Route exact path='/'component ={Splash}></Route>
         <AuthRoute exact path='/signup' component={SignupFormContainer}></AuthRoute>
         <AuthRoute exact path='/login' component={LoginFormContainer}></AuthRoute>
     </div>

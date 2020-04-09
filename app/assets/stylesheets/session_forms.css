@@ -6,7 +6,7 @@
     width: 350px;
     margin: 0 auto;
     position: relative;
-    top: 90px;
+    top: 100px;
 }
 
 .session-form form {
@@ -17,22 +17,27 @@
     width: 100%
 }
 
-.name-input {
+.session-form .name-input {
     display: flex;
     justify-content: space-between;
     width: 97%;
 }
 
-.name-input input {
+.session-form .name-input input {
     width: 48.5%;
 }
 
 
-.form-input {
+.session-form .form-input {
     width: 97%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.session-form .form-input input {
+    width: 100%
 }
 
 .session-form button {
@@ -76,9 +81,6 @@
     margin-bottom: 5px;
 }
 
-.form-input input {
-    width: 100%
-}
 
 .session-form input {
     padding: 16px;
@@ -93,25 +95,26 @@
     font-weight: bold;
 }
 
-.redirect {
-    font-size: 
+.session-form .redirect {
+    font-size: 13px;
+    font-weight: 300;
 }
 
-.redirect a {
+.session-form .redirect a {
     border-bottom: 1px solid #ebebeb;
 }
 
-.redirect a:hover {
+.session-form .redirect a:hover {
     border-bottom: 1px solid  #333333;
 }
 
-.errors {
+.session-form .errors {
     margin-bottom: 5px;
 }
 
-.errors li {
+.session-form .errors li {
     font-size: 14px;
-    color: gold;
+    color: red;
     text-align: center;
 } 
 

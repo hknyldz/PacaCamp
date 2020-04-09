@@ -1,0 +1,98 @@
+.splash {
+    position: relative;
+    top: 115px;
+}
+
+.covid-19 {
+    border: solid 1px #ebebeb; 
+    border-radius: 6px;
+    text-align: center; 
+    padding: 21px 167px;
+    width: 79%;
+    margin: 0 auto;    
+}
+
+.covid-19 h3 {
+    font-size: 16.2px;
+    margin: 11px 0;
+}
+
+.covid-19 p {
+    font-size: 14.9px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.covid-19 a {
+    color: #40d9ac;
+}
+
+.covid-19 a:hover {
+    cursor: pointer;
+}
+
+.reel {
+    width: 79%;
+    margin: 0 auto;
+    margin-top: 52px;
+}
+
+.reel h1 {
+    font-size: 39.5px;
+}
+
+.reel div {
+    margin-top: 24px;
+    margin-bottom: 35px;
+}
+
+.reel h2 {
+    font-size: 18.5px; 
+    font-weight: 300;
+    line-height: 1.57;
+    width: 52%;
+}
+
+.reel span {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.mission {
+    margin-bottom: 20px; 
+}
+
+.mission div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission img {
+    height: 300px;
+    margin: 0 auto;
+}
+
+.mission h2 {
+    margin: 0 auto;
+    width: 420px;
+    font-size: 25px;
+    position: relative;
+    top: -15px;
+}
+
+.mission a {
+    display: inline-block; 
+    position: relative;
+    top: -4px;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.mission a:hover {
+    border-color: #333333;
+}
+
+
+
+
