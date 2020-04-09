@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const NavBar = ({ currentUser, logout }) => {
     const protectedNav = () => (
         <nav className="navbar">
-            <div className="pacacamp">
-                <Link to="/">PacaCamp</Link>
+            <div className="pacacamp-container">
+                <Link to="/"><img className="pacacamp" src={window.pacacamp} alt="PacaCamp"/></Link>
             </div>
 
             <div className="user-menu">
@@ -14,7 +14,7 @@ const NavBar = ({ currentUser, logout }) => {
                 </div>
 
                 <div className="dropdown-container">
-                    <img src={window.logo} alt="logo"/>
+                    <img className="alpaca" src={window.alpaca} alt="alpaca"/>
                     
                     <ul className="dropdown-menu">
                         <li><a className="dropdown-item" href="">Manage account</a></li>
@@ -29,8 +29,8 @@ const NavBar = ({ currentUser, logout }) => {
 
     const authNav = () => (
         <nav className="navbar">
-            <div className="pacacamp">
-                <Link to="/">PacaCamp</Link>
+            <div className="pacacamp-container">
+                <Link to="/"><img className="pacacamp" src={window.pacacamp} alt="PacaCamp" /></Link>
             </div>
             
     

@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="about">
                 <div className="body">
                     <div className="pacacamp">
-                        <img src={window.pacacamp} alt="pacacamp"/>
+                        <img src={window.pacacamp} alt="PacaCamp"/>
                     </div>
 
                     <div className="about-us-and-slogan">
