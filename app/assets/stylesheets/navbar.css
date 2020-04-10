@@ -81,6 +81,7 @@
 .navbar .dropdown-item {
     position: relative;
     left: 30px;
+    width: 100%;
     font-size: 14px;
     display: block;
     padding: 20px 0px;

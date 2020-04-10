@@ -19,8 +19,8 @@ const NavBar = ({ currentUser, logout }) => {
                     <ul className="dropdown-menu">
                         <li><a className="dropdown-item" href="">Manage account</a></li>
                         <li className="divider"></li>
-                        <li><button 
-                        className="dropdown-item" onClick={logout}>Log out</button></li>    
+                        <li><span
+                        className="dropdown-item" onClick={logout}>Log out</span></li>    
                     </ul>
                 </div>
             </div>
