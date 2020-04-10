@@ -5,7 +5,7 @@ const Splash = () => {
         <div className="splash">
             <div className="covid-19">
                 <h3>A note on COVID-19:</h3>
-                <p>We are offering impacted Hipcampers and Hosts the ability to <a href="">cancel or reschedule</a> eligible reservations for a full credit under our natural disaster policy. Find more information on our response to the new coronavirus and relevant content <a href="">here.</a></p>
+                <p>We are offering impacted PacaCampers and Hosts the ability to <a href="">cancel or reschedule</a> eligible reservations for a full credit under our natural disaster policy. Find more information on our response to the new coronavirus and relevant content <a href="">here.</a></p>
             </div>
 
             <div className="reel">
