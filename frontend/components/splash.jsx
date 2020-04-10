@@ -21,7 +21,7 @@ const Splash = () => {
                 <div className="tent-arms">
                     <img src={window.tent_arms} alt="tent arms"/>
                     <h2>PacaCamp empowers people to share their land with campers.</h2>
-                    <a href="">Start hosting</a>
+                    <a href="">Start PacaCamping</a>
                 </div>
 
                 <div className="sun-bill">
