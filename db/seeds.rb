@@ -8,7 +8,7 @@
 
 
 User.destroy_all
-# Spot.destroy_all
+Spot.destroy_all
 # Booking.destroy_all
 # Review.destroy_all
 
@@ -75,7 +75,7 @@ nawal_patel = User.create!(
 farah_marks = User.create!(
     first_name: 'Farah',
     last_name: 'Marks',
-    email: 'eloisamarks@aa.io',
+    email: 'farahmarks@aa.io',
     password: 'marigold'
     )
 
