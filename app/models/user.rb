@@ -6,6 +6,14 @@ class User < ApplicationRecord
 
     after_initialize :ensure_session_token
 
+    has_many :spots,
+    foreign_key: :host_id,
+    class_name: :Spot
+
+    # has_many :bookings,
+    # foreign_key: :guest_id,
+    # class_name: :Booking
+
     attr_reader :password
 
     def self.find_by_credentials(email, password)

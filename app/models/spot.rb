@@ -1,6 +1,10 @@
 class Spot < ApplicationRecord
     validates :name, :host_id, :price, :location, :country, :latitude, :longitude, :activities, :description, presence: true 
 
+    belongs_to :host,
+    foreign_key: :host_id,
+    class_name: :User
+
     # lodging
     # validates :lodging_provided, :parking, 
     # validates :num_sites, :max_guests, presence: true 
@@ -16,10 +20,6 @@ class Spot < ApplicationRecord
 
 
     # has_many_attached :photos
-
-    # belongs_to :host,
-    # foreign_key: :host_id,
-    # class_name: :User
 
     # has_many :bookings,
     # foreign_key: :spot_id, 

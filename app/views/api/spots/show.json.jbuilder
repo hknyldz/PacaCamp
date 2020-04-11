@@ -1,1 +1,1 @@
-json.partial! 'api/users/user', spot: @spot
+json.partial! 'spot', spot: @spot
