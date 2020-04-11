@@ -37,3 +37,5 @@ const SpotIndexItem = ({ spot }) => {
         </div>
     );
 }
+
+export default SpotIndexItem;

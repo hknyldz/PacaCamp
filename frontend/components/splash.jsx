@@ -1,4 +1,5 @@
 import React from 'react';
+import SpotIndexContainer from './spot/spot_index_container';
 
 const Splash = () => {
     return (
@@ -16,6 +17,8 @@ const Splash = () => {
                     </h2>
                 </div>
             </div>
+
+            <SpotIndexContainer />
 
             <div className="mission">
                 <div className="tent-arms">
