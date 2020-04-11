@@ -3,19 +3,28 @@ class Spot < ApplicationRecord
 
     belongs_to :host,
     foreign_key: :host_id,
-    class_name: :User
+    class_name: :User,
+    dependent: :destroy
 
     has_one :area,
     foreign_key: :spot_id,
-    class_name: :Area
+    class_name: :Area,
+    dependent: :destroy
 
     has_one :essential,
     foreign_key: :spot_id,
-    class_name: :Essential
+    class_name: :Essential,
+    dependent: :destroy
 
     has_one :amenity,
     foreign_key: :spot_id,
-    class_name: :Amenity
+    class_name: :Amenity,
+    dependent: :destroy
+
+    has_one :detail,
+    foreign_key: :spot_id,
+    class_name: :Detail,
+    dependent: :destroy
 
     # area
     # validates :lodging_provided, :parking, inclusion: { in: [true, false] }

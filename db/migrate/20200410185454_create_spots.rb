@@ -15,25 +15,25 @@ class CreateSpots < ActiveRecord::Migration[5.2]
       # t.integer :spot_id, null: false
       # t.integer :num_sites, null: false
       # t.integer :max_guests, null: false
-      # t.boolean :lodging_provided, default: false, null: false
+      # t.boolean :lodging_provided, null: false
       # t.string :lodging
-      # t.boolean :parking, default: false, null: false
+      # t.boolean :parking, null: false
       # add_index :areas, :spot_id
 
       # essential
       # t.integer :spot_id, null: false
-      # t.boolean :campfires, default: false, null: false
-      # t.boolean :toilet, default: false, null: false
-      # t.boolean :pets, default: false, null: false
+      # t.boolean :campfires, null: false
+      # t.boolean :toilet, null: false
+      # t.boolean :pets, null: false
       # add_index :essentials, :spot_id
 
       # amenity
       # t.integer :spot_id, null: false
-      # t.boolean :potable_water, default: false, null: false
-      # t.boolean :kitchen, default: false, null: false
-      # t.boolean :showers, default: false, null: false
-      # t.boolean :wifi, default: false, null: false
-      # t.boolean :bins, default: false, null: false
+      # t.boolean :potable_water, null: false
+      # t.boolean :kitchen, null: false
+      # t.boolean :showers, null: false
+      # t.boolean :wifi, null: false
+      # t.boolean :bins, null: false
       # add_index :amenities, :spot_id
       
       # detail
