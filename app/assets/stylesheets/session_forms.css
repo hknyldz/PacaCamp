@@ -17,6 +17,34 @@
     width: 100%
 }
 
+.session-form .strike {
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.session-form .or {
+    font-weight: 300;
+}
+/* .session-form .strike>span:before, .session-form .strike>span:after {
+    content: "";
+    position: absolute;
+    top: 100 px;
+    width: 175px;
+    height: 1px;
+    background-color: #ebebeb;
+} */
+
+.session-form .strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.session-form .strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
 .session-form .name-input {
     display: flex;
     justify-content: space-between;
@@ -62,6 +90,7 @@
 
 #demo-user-button {
     background-color: #3C5A98;
+    margin: 0;
 }
 
 .session-form h1 {
@@ -73,7 +102,7 @@
     font-size: 15px;
     font-weight: 400;
     color: #757575;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .session-form h3 {
@@ -109,13 +138,19 @@
 }
 
 .session-form .errors {
-    margin-bottom: 5px;
+    padding: 22.5px 14px;
+    margin-bottom: 22px;
+    background-color: #fdf0ef;
+    border-color: transparent;
+    border-radius: 2px;
+    text-align: left;
+    width: 97%; 
 }
 
 .session-form .errors li {
-    font-size: 14px;
-    color: red;
-    text-align: center;
+    font-size: 13px;
+    color: #c44841;
+    font-weight: 300;
 } 
 
 

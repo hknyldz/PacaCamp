@@ -37,12 +37,16 @@ class SignupForm extends React.Component {
 
     render() {
         const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
+        let errorsClass;
+        errorsClass = errors.length ? "errors" : null;
+        const errorsUl = <ul className={errorsClass}>{errors}</ul>;
+
         return (
             <div className="session-form">
                 <h1>Join PacaCamp</h1>
                 <h2>Discover the best camping near me</h2>
 
-                <ul className="errors">{errors}</ul>
+                {errorsUl}
 
                 <form>
                     <div className="name-input">

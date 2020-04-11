@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 class LoginForm extends React.Component {
@@ -45,16 +45,23 @@ class LoginForm extends React.Component {
 
     render() {
         const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
+        let errorsClass;
+        errorsClass = errors.length ? "errors" : null;
+        const errorsUl = <ul className={errorsClass}>{errors}</ul>;
+
         return (
             <div className="session-form">
                 <h1>Welcome back!</h1>
                 <h2>It's about time for another camping trip</h2>
 
+                {errorsUl}
+                
                 <button id="demo-user-button" onClick={this.handleClick}>Demo User</button>
                 
-                <span>or</span>
-             
-                <ul className="errors">{errors}</ul>
+                <div className="strike">
+                    <span className="or">or</span>
+                </div>
+                
                 <form>
                     
                     <div className="form-input">
