@@ -12,6 +12,11 @@ class Spot < ApplicationRecord
     has_one :essential,
     foreign_key: :spot_id,
     class_name: :Essential
+
+    has_one :amenity,
+    foreign_key: :spot_id,
+    class_name: :Amenity
+
     # area
     # validates :lodging_provided, :parking, inclusion: { in: [true, false] }
     # validates :spot_id, :num_sites, :max_guests, presence: true 

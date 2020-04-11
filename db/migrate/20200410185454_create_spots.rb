@@ -34,7 +34,7 @@ class CreateSpots < ActiveRecord::Migration[5.2]
       # t.boolean :showers, default: false, null: false
       # t.boolean :wifi, default: false, null: false
       # t.boolean :bins, default: false, null: false
-      # add_index :, :spot_id
+      # add_index :amenities, :spot_id
       
       # detail
       # t.integer :spot_id, null: false
