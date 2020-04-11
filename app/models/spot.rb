@@ -9,18 +9,23 @@ class Spot < ApplicationRecord
     foreign_key: :spot_id,
     class_name: :Area
 
+    has_one :essential,
+    foreign_key: :spot_id,
+    class_name: :Essential
     # area
     # validates :lodging_provided, :parking, inclusion: { in: [true, false] }
-    # validates :num_sites, :max_guests, presence: true 
+    # validates :spot_id, :num_sites, :max_guests, presence: true 
 
     # essential
+    # validates :spot_id, presence: true 
     # validates :campfires, :toilet, :pets, inclusion: { in: [true, false] }
 
     # amenity
+    # validates :spot_id, presence: true 
     # validates :potable_water, :kitchen, :showers, :wifi, :bins, inclusion: { in: [true, false] }
     
     # detail
-    # validates :checkin_time, :checkout_time, :cancellation_policy, :on_arrival, :min_nights, presence: true 
+    # validates :spot_id, :checkin_time, :checkout_time, :cancellation_policy, :on_arrival, :min_nights, presence: true 
 
 
     # has_many_attached :photos
