@@ -1,6 +1,6 @@
 import { RECEIVE_SPOTS, RECEIVE_SPOT } from "../actions/spot_actions";
 
-const spotsReducer = (state, action) => {
+const spotsReducer = (state = {}, action) => {
     Object.freeze(state); 
     switch (action.type) {
         case RECEIVE_SPOTS:
