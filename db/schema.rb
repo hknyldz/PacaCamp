@@ -10,10 +10,56 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_11_180221) do
+ActiveRecord::Schema.define(version: 2020_04_11_194044) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "amenities", force: :cascade do |t|
+    t.integer "spot_id", null: false
+    t.boolean "potable_water", null: false
+    t.boolean "kitchen", null: false
+    t.boolean "showers", null: false
+    t.boolean "wifi", null: false
+    t.boolean "bins", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["spot_id"], name: "index_amenities_on_spot_id"
+  end
+
+  create_table "areas", force: :cascade do |t|
+    t.integer "spot_id", null: false
+    t.integer "num_sites", null: false
+    t.integer "max_guests", null: false
+    t.boolean "lodging_provided", null: false
+    t.string "lodging"
+    t.boolean "parking", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["spot_id"], name: "index_areas_on_spot_id"
+  end
+
+  create_table "details", force: :cascade do |t|
+    t.integer "spot_id", null: false
+    t.string "checkin_time", null: false
+    t.string "checkout_time", null: false
+    t.string "cancellation_policy", null: false
+    t.string "on_arrival", null: false
+    t.integer "min_nights", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["spot_id"], name: "index_details_on_spot_id"
+  end
+
+  create_table "essentials", force: :cascade do |t|
+    t.integer "spot_id", null: false
+    t.boolean "campfires", null: false
+    t.boolean "toilet", null: false
+    t.boolean "pets", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["spot_id"], name: "index_essentials_on_spot_id"
+  end
 
   create_table "spots", force: :cascade do |t|
     t.string "name", null: false

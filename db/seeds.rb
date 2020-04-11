@@ -9,10 +9,10 @@
 
 User.destroy_all
 Spot.destroy_all
-# Lodging.destroy_all
-# Essential.destroy_all
-# Amenity.destroy_all
-# Detail.destroy_all
+Area.destroy_all
+Essential.destroy_all
+Amenity.destroy_all
+Detail.destroy_all
 # Booking.destroy_all
 # Review.destroy_all
 
@@ -239,6 +239,214 @@ grandall_vineyard = Spot.create!(
     description: 'We\'re a family-run vineyard at the base of the Mayacamas Mountains and adjacent to the Russian River. Our campgrounds are perfect for picnicing and storytelling over campfire. Hike nearby forests and mountains, paddle in the river, and join us for some wine. We guarantee a fine time!',
     rating: 95
 )
+
+#AREAS
+ar1 = Area.create!(
+    spot_id: 1,
+    num_sites: 1,
+    max_guests: 6, 
+    lodging_provided: true, 
+    lodging: '2 dwellings',
+    parking: true
+)
+
+ar2 = Area.create!(
+    spot_id: 2,
+    num_sites: 1,
+    max_guests: 5,
+    lodging_provided: true, 
+    lodging: '1 cabin',
+    parking: true
+)
+
+ar3 = Area.create!(
+    spot_id: 3,
+    num_sites: 1,
+    max_guests: 3,
+    lodging_provided: true,
+    lodging: '1 dwelling',
+    parking: true
+)
+
+ar4 = Area.create!(
+    spot_id: 4,
+    num_sites: 1,
+    max_guests: 4,
+    lodging_provided: true,
+    lodging: '1 yurt',
+    parking: true
+)
+
+ar5 = Area.create!(
+    spot_id: 5, 
+    num_sites: 1
+    max_guests: 5
+    lodging_provided: true,
+    lodging: '1 hanok',
+    parking: false
+)
+
+ar6 = Area.create!(
+    spot_id: 6, 
+    num_sites: 2
+    max_guests: 8
+    lodging_provided: false
+    parking: true 
+)
+
+#ESSENTIALS
+es1 = Essential.create!(
+    spot_id: 1,
+    campfires: true, 
+    toilet: true, 
+    pets: false
+)
+
+es2 = Essential.create!(
+    spot_id: 2,
+    campfires: false,
+    toilet: true, 
+    pets: false
+)
+
+es3 = Essential.create!(
+    spot_id: 3,
+    campfires: false,
+    toilet: true, 
+    pets: false
+)
+
+es4 = Essential.create!(
+    spot_id: 4,      
+    campfires: true, 
+    toilet: false,
+    pets: false
+)
+
+es5 = Essential.create!(
+    spot_id: 5, 
+    campfires: false, 
+    toilet: true,
+    pets: false
+)
+
+es6 = Essential.create!(
+    spot_id: 6, 
+    campfires: true, 
+    toilet: true,
+    pets: true
+)
+
+#AMENITIES 
+am1 = Amenity.create!(
+    spot_id: 1,
+    potable_water: true, 
+    kitchen: true, 
+    showers: true, 
+    wifi: true,
+    bins: true
+)
+
+am2 = Amenity.create!(
+    spot_id: 2,
+    potable_water: true,
+    kitchen: true,
+    showers: true,
+    wifi: true,
+    bins: true
+)
+
+am3 = Amenity.create!(
+    spot_id: 3,
+    potable_water: true,
+    kitchen: true, 
+    showers: true,
+    wifi: false, 
+    bins: true
+)
+
+am4 = Amenity.create!(
+    spot_id: 4,
+    potable_water: false,
+    kitchen: false,
+    showers: false,
+    wifi: false,
+    bins: false
+)
+
+am5 = Amenity.create!(
+    spot_id: 5, 
+    potable_water: true
+    kitchen: true,
+    showers: true,
+    wifi: true,
+    bins: true 
+)
+
+am6 = Amenity.create!(
+    spot_id: 6, 
+    potable_water: true, 
+    kitchen: false, 
+    showers: true,
+    wifi: true,
+    bins: true    
+)
+
+#DETAILS
+de1 = Detail.create!(
+    spot_id: 1,
+    checkin_time: 'After 7AM',
+    checkout_time: 'Before 12PM',
+    cancellation_policy: 'Super Flexible', 
+    on_arrival: 'Meet and greet',
+    min_nights: 1
+)
+
+de2 = Detail.create!(
+    spot_id: 2,
+    checkin_time: 'After 10AM',
+    checkout_time: 'Before 1PM',
+    cancellation_policy: 'Strict',
+    on_arrival: 'Meet and greet',
+    min_nights: 1
+)
+
+de3 = Detail.create!(
+    spot_id: 3,
+    checkin_time: 'After',
+    checkout_time: 'Before',
+    cancellation_policy: 'Flexible',
+    on_arrival: 'Meet and greet', 
+    min_nights: 1
+)
+
+de4 = Detail.create!(
+    spot_id: 4,
+    checkin_time: 'After 1PM',
+    checkout_time: 'Before 2PM',
+    cancellation_policy: 'Super Strict',
+    on_arrival: 'Meet and greet',
+    min_nights: 1
+)
+
+de5 = Detail.create!(
+    spot_id: 5, 
+    checkin_time: 'After 9AM',
+    checkout_time: 'Before 3PM',
+    cancellation_policy: 'Super Strict',
+    on_arrival: 'Meet and greet'
+    min_nights: 1
+)
+
+de6 = Detail.create!(
+    spot_id: 6, 
+    checkin_time: 'After 1PM',
+    checkout_time: 'Before' 2PM,
+    cancellation_policy: 'Flexible',
+    on_arrival: 'Go straight to camp',
+    min_nights: 1
+)
+
 
 
 
