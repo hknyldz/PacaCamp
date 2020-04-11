@@ -171,7 +171,8 @@ pueblo_machuca = Spot.create!(
     latitude: -22.920985,
     longitude: -68.190345,
     activities: ['hiking', 'biking', 'horseback riding'],
-    description: 'Wait. Take a minute. Slow down. Traverse the desert on bike. Slide down the dunes on a sandboard. Smile at the alpacas.'
+    description: 'Wait. Take a minute. Slow down. Traverse the desert on bike. Slide down the dunes on a sandboard. Smile at the alpacas.',
+    rating: 98
 )
 
 rows_of_lavender = Spot.create!(
@@ -183,7 +184,8 @@ rows_of_lavender = Spot.create!(
     latitude: -44.703724, 
     longitude: 169.187210,
     activities: ['fishing', 'hiking', 'skiing', 'wildlife watching'],
-    description: "Can someone say 'fragrance for miles'? Rows of Lavender is a family-run lavender farm that's been operating for generations. Walk our acres of lavender fields. Indulge in freshly made herbal tea and lavender sweets. Take in the wilderness. Ski on nearby snowcapped mountains. Wander in beech forests and alpine lakes. Our guests receive the full spectrum of the nature experience."
+    description: "Can someone say 'fragrance for miles'? Rows of Lavender is a family-run lavender farm that's been operating for generations. Walk our acres of lavender fields. Indulge in freshly made herbal tea and lavender sweets. Take in the wilderness. Ski on nearby snowcapped mountains. Wander in beech forests and alpine lakes. Our guests receive the full spectrum of the nature experience.",
+    rating: 95
 )
 
 open_terrace = Spot.create!(
@@ -195,7 +197,8 @@ open_terrace = Spot.create!(
     latitude: 25.750203, 
     longitude: 110.133387, 
     activities: ['hiking'],
-    description: 'The pictures really speak for themselves. We work year-round toiling the majestic terraced fields architected by our ancestors and in return we enjoy the bounty of our labor: rice. Rice is life. Breakfast, lunch, and dinner are provided to guests par for the stay. Guests may also partake in the making of meals, Longji tea and wine.'
+    description: 'Open Terrace is part of a village community. Our village works year-round toiling the majestic terraced fields architected by our ancestors and in return we enjoy the various fruits of our labor, chief among which is rice. Breakfast, lunch, and dinner are provided to guests par for the stay. Guests may also partake in the making of meals, tea and wine.',
+    rating: 99
 )
 
 eagles_landing = Spot.create!(
@@ -207,7 +210,8 @@ eagles_landing = Spot.create!(
     latitude: 48.862290, 
     longitude: 88.589764,
     activities: ['horseback riding'],
-    description: 'We are a nomadic family in western Mongolia, where our way of life reflects our relationship with our land. Change is a constant and we go where our herd goes. We take only as much as we need and subsist almost entirely on the milk and meat of our animals. Every year the Golden Eagle Festival is held here in Bayan-Ölgii where hunter and eagle demonstrate their prowess and connection on the steppes of our homeland. Ready for a taste of a life free from the golden shackles of modernity? But be aware you\'ll be at the mercy of the vicissitudes of the seasons and terrain.' 
+    description: 'Welcome to Eagle\'s Landing. We are a nomadic family in western Mongolia, where our way of life reflects our relationship with our land. Change is a constant and we go where our herd goes. We take only as much as we need and subsist almost entirely on the milk and meat of our animals. Every year the Golden Eagle Festival is held held on the first weekend of October here in Bayan-Ölgii, where hunter and eagle demonstrate their prowess and connection on the steppes of our homeland. Ready for a taste of a life free from the golden shackles of modernity? But do be aware you\'ll be at the mercy of the vicissitudes of the seasons and terrain.',
+    rating: 100
 )
 
 uri_hanok = Spot.create!(
@@ -219,7 +223,8 @@ uri_hanok = Spot.create!(
     latitude: 37.582633, 
     longitude: 126.983610,
     activities: ['hiking'],
-    description: 'Uri Hanok is situated in Bukchon Hanok Village, a traditional village that dates back to the Joseon Dynasty. Formerly the residential quarters of high-ranking officials and nobility of centuries past, Bukchon Hanok Village is now home to cultural centers, guesthouses, and restaurants and many hanoks in the village remain private residences. Immerse yourself in the culture and ceremonies of traditional Korea here! Additionally, should you also like a walk on the royal side, we are also between Gyeongbokgung Palace and Changdeokgung Palace.'
+    description: 'Uri Hanok is situated in Bukchon Hanok Village, a traditional village that dates back to the Joseon Dynasty. Formerly the residential quarters of high-ranking officials and nobility of centuries past, Bukchon Hanok Village is now home to cultural centers, guesthouses, and restaurants and many hanoks in the village remain private residences. Immerse yourself in the culture and ceremonies of traditional Korea here! Additionally, should you also like a walk on the royal side, we are also between Gyeongbokgung Palace and Changdeokgung Palace.',
+    rating: 100
 )
 
 grandall_vineyard = Spot.create!(
@@ -231,8 +236,10 @@ grandall_vineyard = Spot.create!(
     latitude: 38.426456,
     longitude:  -122.556389,
     activities: ['hiking', 'paddling', 'swimming'],
-    description: 'We\'re a family-run vineyard at the base of the Mayacamas Mountains and adjacent to the Russian River. Our campgrounds are perfect for picnicing and storytelling over campfire. Hike nearby forests and mountains, paddle in the river, and join us for some wine. We guarantee a fine time!'
+    description: 'We\'re a family-run vineyard at the base of the Mayacamas Mountains and adjacent to the Russian River. Our campgrounds are perfect for picnicing and storytelling over campfire. Hike nearby forests and mountains, paddle in the river, and join us for some wine. We guarantee a fine time!',
+    rating: 95
 )
+
 
 
 
