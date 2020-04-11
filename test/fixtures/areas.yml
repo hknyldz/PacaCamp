@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spot_id: 1
+  num_sites: 1
+  max_guests: 1
+  lodging_provided: false
+  lodging: MyString
+  parking: false
+
+two:
+  spot_id: 1
+  num_sites: 1
+  max_guests: 1
+  lodging_provided: false
+  lodging: MyString
+  parking: false

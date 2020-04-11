@@ -5,8 +5,12 @@ class Spot < ApplicationRecord
     foreign_key: :host_id,
     class_name: :User
 
-    # lodging
-    # validates :lodging_provided, :parking, 
+    has_one :area,
+    foreign_key: :spot_id,
+    class_name: :Area
+
+    # area
+    # validates :lodging_provided, :parking, inclusion: { in: [true, false] }
     # validates :num_sites, :max_guests, presence: true 
 
     # essential

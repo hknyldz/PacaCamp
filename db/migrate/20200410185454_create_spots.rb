@@ -11,21 +11,21 @@ class CreateSpots < ActiveRecord::Migration[5.2]
       t.string :activities, default: [], array: true
       t.text :description, null: false
 
-      # lodging
+      # area
       # t.integer :spot_id, null: false
       # t.integer :num_sites, null: false
       # t.integer :max_guests, null: false
       # t.boolean :lodging_provided, default: false, null: false
       # t.string :lodging
       # t.boolean :parking, default: false, null: false
-      # add_index :, :spot_id
+      # add_index :areas, :spot_id
 
       # essential
       # t.integer :spot_id, null: false
       # t.boolean :campfires, default: false, null: false
       # t.boolean :toilet, default: false, null: false
       # t.boolean :pets, default: false, null: false
-      # add_index :, :spot_id
+      # add_index :essentials, :spot_id
 
       # amenity
       # t.integer :spot_id, null: false
@@ -43,7 +43,7 @@ class CreateSpots < ActiveRecord::Migration[5.2]
       # t.string :cancellation_policy, null: false
       # t.string :on_arrival, null: false
       # t.integer :min_nights, null: false
-      # add_index :, :spot_id 
+      # add_index :details, :spot_id 
       
 
       t.timestamps

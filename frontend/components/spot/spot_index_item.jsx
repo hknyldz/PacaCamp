@@ -21,7 +21,7 @@ const SpotIndexItem = ({ spot }) => {
                     <div className="rating-reviews">
                         <span className="rating">
                             <span className="thumbs-up"></span>
-                            <span className="percentage"></span>
+                            <span className="percentage">{spot.rating}</span>
                         </span>
                         
                         <span className="reviews">
