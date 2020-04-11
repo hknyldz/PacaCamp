@@ -279,8 +279,8 @@ ar4 = Area.create!(
 
 ar5 = Area.create!(
     spot_id: 5, 
-    num_sites: 1
-    max_guests: 5
+    num_sites: 1,
+    max_guests: 5,
     lodging_provided: true,
     lodging: '1 hanok',
     parking: false
@@ -288,9 +288,9 @@ ar5 = Area.create!(
 
 ar6 = Area.create!(
     spot_id: 6, 
-    num_sites: 2
-    max_guests: 8
-    lodging_provided: false
+    num_sites: 2,
+    max_guests: 8,
+    lodging_provided: false,
     parking: true 
 )
 
@@ -376,7 +376,7 @@ am4 = Amenity.create!(
 
 am5 = Amenity.create!(
     spot_id: 5, 
-    potable_water: true
+    potable_water: true,
     kitchen: true,
     showers: true,
     wifi: true,
@@ -395,7 +395,7 @@ am6 = Amenity.create!(
 #DETAILS
 de1 = Detail.create!(
     spot_id: 1,
-    checkin_time: 'After 7AM',
+    checkin_time: 'After 2PM',
     checkout_time: 'Before 12PM',
     cancellation_policy: 'Super Flexible', 
     on_arrival: 'Meet and greet',
@@ -413,8 +413,8 @@ de2 = Detail.create!(
 
 de3 = Detail.create!(
     spot_id: 3,
-    checkin_time: 'After',
-    checkout_time: 'Before',
+    checkin_time: 'After 11AM',
+    checkout_time: 'Before 12PM',
     cancellation_policy: 'Flexible',
     on_arrival: 'Meet and greet', 
     min_nights: 1
@@ -434,14 +434,14 @@ de5 = Detail.create!(
     checkin_time: 'After 9AM',
     checkout_time: 'Before 3PM',
     cancellation_policy: 'Super Strict',
-    on_arrival: 'Meet and greet'
+    on_arrival: 'Meet and greet',
     min_nights: 1
 )
 
 de6 = Detail.create!(
     spot_id: 6, 
     checkin_time: 'After 1PM',
-    checkout_time: 'Before' 2PM,
+    checkout_time: 'Before 2PM',
     cancellation_policy: 'Flexible',
     on_arrival: 'Go straight to camp',
     min_nights: 1
