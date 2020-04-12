@@ -28,13 +28,13 @@ const Splash = () => {
                 </div>
 
                 <div className="sun-bill">
-                    <img src={window.sun_bill}alt="sun bill" />
+                    <img src={window.sun_bill} alt="sun bill" />
                     <h2>Creating sustainable revenue and fostering community.</h2>
                     <a href="">Learn more</a>
                 </div>
 
                 <div className="palm-eye">
-                    <img src={window.palm_eye}alt="palm eye" />
+                    <img src={window.palm_eye} alt="palm eye" />
                     <h2>Unlocking access to incredible new places to camp.</h2>
                     <a href="">Discover camps</a>
                 </div>

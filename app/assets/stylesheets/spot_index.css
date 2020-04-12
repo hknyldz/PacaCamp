@@ -1,0 +1,105 @@
+.spot-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 79%;
+    margin: 0 auto;
+}
+
+.spot-index-item {
+    width: 33.33333%;
+    padding: 0px 10px;
+}
+
+.spot-index-item .frame {
+    margin-top: 20px;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.1);
+}
+
+.spot-index-item .frame:hover {
+    cursor: pointer;
+}
+
+.spot-index-item .image-container {
+    width: 100%;
+    /* height: 120px; */
+}
+
+.spot-index-item img {
+    width: 100%;
+    /* height: 120px; */
+}
+
+.spot-index .figure-caption {
+    padding: 0px 12px 12px 12px; 
+    font-family: "Calibre";
+}
+
+#check-icon {
+    color: #4299FB;
+}
+
+#thumbs-up-icon, .spot-index .percentage {
+    color: #40d9ac;
+}
+
+.spot-index .check {
+    vertical-align: super;
+}
+
+.spot-index .spot-name {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+}
+
+.spot-index .location {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.name-icons-location {
+    margin-bottom: 25px;
+}
+
+.spot-index .name-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spot-index .icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.rating-reviews {
+    font-size: 14px;
+}
+
+.spot-index .percentage {
+    font-weight: bold;
+}
+
+.spot-index .reviews {
+    color: #757575;
+    font-weight: 300;
+}
+
+.rating-reviews-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spot-index .price {
+    font-size: 17.5px;
+    font-weight: 500;
+}
+
+
+
+
