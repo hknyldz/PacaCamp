@@ -44,9 +44,11 @@
     padding: 9px 7px 22px 7px;
 }
 
-.host-description .avatar img {
+
+.host .avatar img {
     width: 90px;
     height: 90px;
+    border-radius: 50%;
 }
 
 .host-description .host {
@@ -72,6 +74,7 @@
     margin-top: 25px;
     margin-bottom: 35px;
 }
+
 
 .host-description .description {
     width: 65%;
