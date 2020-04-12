@@ -13,6 +13,10 @@ class LoginForm extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     componentWillUnmount() {
         this.props.clearErrors(); //will need to dispatch an action to clear session errors
     }

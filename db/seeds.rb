@@ -170,7 +170,7 @@ pueblo_machuca = Spot.create!(
     country: 'Chile',
     latitude: -22.920985,
     longitude: -68.190345,
-    activities: ['hiking', 'biking', 'horseback riding'],
+    activities: ['hiking', 'biking', 'horseback riding', 'climbing'],
     description: 'Wait. Take a minute. Slow down. Traverse the desert on bike. Slide down the dunes on a sandboard. Smile at the alpacas.',
     rating: 98
 )
@@ -183,7 +183,7 @@ rows_of_lavender = Spot.create!(
     country: 'New Zealand', 
     latitude: -44.703724, 
     longitude: 169.187210,
-    activities: ['fishing', 'hiking', 'skiing', 'wildlife watching'],
+    activities: ['fishing', 'hiking', 'snow sports', 'wildlife watching'],
     description: "Can someone say 'fragrance for miles'? Rows of Lavender is a family-run lavender farm that's been operating for generations. Walk our acres of lavender fields. Indulge in freshly made herbal tea and lavender sweets. Take in the wilderness. Ski on nearby snowcapped mountains. Wander in beech forests and alpine lakes. Our guests receive the full spectrum of the nature experience.",
     rating: 95
 )
@@ -209,7 +209,7 @@ eagles_landing = Spot.create!(
     country: 'Mongolia', 
     latitude: 48.862290, 
     longitude: 88.589764,
-    activities: ['horseback riding'],
+    activities: ['horseback riding', 'wildlife watching'],
     description: 'Welcome to Eagle\'s Landing. We are a nomadic family in western Mongolia, where our way of life reflects our relationship with our land. Change is a constant and we go where our herd goes. We take only as much as we need and subsist almost entirely on the milk and meat of our animals. Every year the Golden Eagle Festival is held held on the first weekend of October here in Bayan-Ölgii, where hunter and eagle demonstrate their prowess and connection on the steppes of our homeland. Ready for a taste of a life free from the golden shackles of modernity? But do be aware you\'ll be at the mercy of the vicissitudes of the seasons and terrain.',
     rating: 100
 )
