@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavBar = ({ currentUser, logout }) => {
+const NavBar = ({ currentUser, logout, loginLink, signupLink }) => {
     const protectedNav = () => (
         <nav className="navbar">
             <div className="pacacamp-container">
@@ -35,8 +35,8 @@ const NavBar = ({ currentUser, logout }) => {
             
     
             <div className="guest-menu">
-                <Link id="login-link" to="/login">Log in</Link>
-                <Link id="signup-link" to="/signup">Sign up</Link>
+                {loginLink}
+                {signupLink}
             </div>
         </nav> 
     );

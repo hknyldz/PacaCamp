@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 class LoginForm extends React.Component {
@@ -82,7 +82,7 @@ class LoginForm extends React.Component {
                 <div className="redirect">
                     <span>Don't have a PacaCamp account?</span>
                     &nbsp;
-                    <strong><Link to='/signup'>Sign Up!</Link></strong>
+                    <strong><Link to='/signup' onClick={this.props.closeModal}>Sign Up!</Link></strong>
                 </div>
             </div>
         )

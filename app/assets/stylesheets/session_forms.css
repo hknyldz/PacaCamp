@@ -4,9 +4,10 @@
     justify-content: center;
     flex-direction: column;
     width: 350px;
-    margin: 0 auto;
+    margin: 0px auto 10px auto;
     position: relative;
     top: 100px;
+    background-color: white;
 }
 
 .session-form form {
@@ -35,7 +36,7 @@
     background-color: #ebebeb;
 } */
 
-.session-form .strike > span:before {
+/* .session-form .strike > span:before {
     right: 100%;
     margin-right: 15px;
 }
@@ -43,7 +44,7 @@
 .session-form .strike > span:after {
     left: 100%;
     margin-left: 15px;
-}
+}  */
 
 .session-form .name-input {
     display: flex;
@@ -122,6 +123,16 @@
 .session-form input::placeholder {
     color:  #333333;
     font-weight: bold;
+}
+
+.session-form .terms {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 300;
+    color: #757575;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .session-form .redirect {

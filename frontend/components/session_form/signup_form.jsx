@@ -68,12 +68,18 @@ class SignupForm extends React.Component {
                     </div>
                     
                     <button className="signup-button" type="submit" onClick={this.handleSubmit}>Join PacaCamp</button>
+
+                    <p className="terms">
+                        By signing up, I agree to PacaCamp's 
+                        <br/>
+                        terms and privacy policy.
+                    </p>
                 </form>
 
                 <div className="redirect">
                     <span>Have an account?</span>
                     &nbsp;
-                    <strong><Link to='/login'>Sign in</Link></strong>
+                    <strong><Link to='/login' onClick={this.props.closeModal}>Sign in</Link></strong>
                 </div>
             </div>
         )
