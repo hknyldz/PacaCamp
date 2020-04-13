@@ -153,14 +153,16 @@
 
 .spot-show .details .heading {
     width: 17%;
+    vertical-align: bottom;
 }
 
 .spot-show .details .content {
     display: flex;
     justify-content: flex-start;
     width: 83%;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 2;
+    letter-spacing: 0.6;
 }
 
 .spot-show .content > ul {
@@ -207,9 +209,17 @@
     width: 33%;
 }
 
+.spot-show .activities > h2 {
+    font-weight: 400;
+}
+
 .spot-show .activity h2 {
     font-size: 20px;
     font-weight: 400px;
+}
+
+.spot-show .activities p {
+    margin-bottom: 25px;
 }
 
 
