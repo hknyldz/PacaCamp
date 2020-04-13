@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require "open-uri"
 
 User.destroy_all
 Spot.destroy_all
@@ -175,6 +176,9 @@ pueblo_machuca = Spot.create!(
     rating: 98
 )
 
+pueblo_machuca.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/1.jpg'), filename: '1.jpg')
+pueblo_machuca.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/2.jpg'), filename: '2.jpg')
+
 rows_of_lavender = Spot.create!(
     name: 'Rows of Lavender',
     host_id: 18, 
@@ -187,6 +191,9 @@ rows_of_lavender = Spot.create!(
     description: "Can someone say 'fragrance for miles'? Rows of Lavender is a family-run lavender farm that's been operating for generations. Walk our acres of lavender fields. Indulge in freshly made herbal tea and lavender sweets. Take in the wilderness. Ski on nearby snowcapped mountains. Wander in beech forests and alpine lakes. Our guests receive the full spectrum of the nature experience.",
     rating: 95
 )
+
+rows_of_lavender.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/3.jpg'), filename: '3.jpg')
+rows_of_lavender.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/4.jpg'), filename: '4.jpg')
 
 open_terrace = Spot.create!(
     name: 'Open Terrace',
@@ -201,6 +208,9 @@ open_terrace = Spot.create!(
     rating: 99
 )
 
+open_terrace.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/5.jpg'), filename: '5.jpg')
+open_terrace.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/6.jpg'), filename: '6.jpg')
+
 eagles_landing = Spot.create!(
     name: 'Eagle\'s Landing',
     host_id: 11, 
@@ -213,6 +223,9 @@ eagles_landing = Spot.create!(
     description: 'Welcome to Eagle\'s Landing. We are a nomadic family in western Mongolia, where our way of life reflects our relationship with our land. Change is a constant and we go where our herd goes. We take only as much as we need and subsist almost entirely on the milk and meat of our animals. Every year the Golden Eagle Festival is held held on the first weekend of October here in Bayan-Ölgii, where hunter and eagle demonstrate their prowess and connection on the steppes of our homeland. Ready for a taste of a life free from the golden shackles of modernity? But do be aware you\'ll be at the mercy of the vicissitudes of the seasons and terrain.',
     rating: 100
 )
+
+eagles_landing.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/7.jpg'), filename: '7.jpg')
+eagles_landing.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/8.jpg'), filename: '8.jpg')
 
 uri_hanok = Spot.create!(
     name: 'Uri Hanok',
@@ -227,6 +240,9 @@ uri_hanok = Spot.create!(
     rating: 100
 )
 
+uri_hanok.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/9.jpg'), filename: '9.jpg')
+uri_hanok.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/10.jpg'), filename: '10.jpg')
+
 grandall_vineyard = Spot.create!(
     name: 'Grandall Vineyard',
     host_id: 9, 
@@ -239,6 +255,9 @@ grandall_vineyard = Spot.create!(
     description: 'We\'re a family-run vineyard at the base of the Mayacamas Mountains and adjacent to the Russian River. Our campgrounds are perfect for picnicing and storytelling over campfire. Hike nearby forests and mountains, paddle in the river, and join us for some wine. We guarantee a fine time!',
     rating: 95
 )
+
+grandall_vineyard.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/11.jpg'), filename: '11.jpg')
+grandall_vineyard.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/12.jpg'), filename: '12.jpg')
 
 #AREAS
 ar1 = Area.create!(

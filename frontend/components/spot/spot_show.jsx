@@ -264,8 +264,8 @@ class SpotShow extends React.Component {
         return (
             <div className="spot-show">
                 <div className="photos">
-                    <div className="photo-1"><img src="" alt="" /></div>
-                    <div className="photo-2"><img src="" alt="" /></div>
+                    <div className="photo-1"><img src={this.props.spot.photoUrls[0]} alt="first photo" /></div>
+                    <div className="photo-2"><img src={this.props.spot.photoUrls[1]} alt="second photo" /></div>
                 </div>
 
                 <div className="make-room"> 

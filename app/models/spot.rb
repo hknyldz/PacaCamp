@@ -6,6 +6,8 @@ class Spot < ApplicationRecord
     class_name: :User,
     dependent: :destroy
 
+    has_many_attached :photos
+
     has_one :area,
     foreign_key: :spot_id,
     class_name: :Area,

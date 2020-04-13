@@ -3,13 +3,29 @@
     top: 70px;
 }
 
+.spot-show .photos {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.spot-show .photo-1 img {
+    width: 720px;
+    object-fit: cover;
+}
+
+.spot-show .photo-2 img {
+    width: 500px;
+    object-fit: center;
+}
+
 .spot-show .make-room {
     width: 81%;
     margin: 0 auto;
 }
 
 .spot-show .spot-show-body {
-    width: 66%;
+    width: 66.66666667%;
 }
 
 .spot-show .country-location {

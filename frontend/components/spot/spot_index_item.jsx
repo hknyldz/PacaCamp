@@ -15,7 +15,7 @@ const SpotIndexItem = ({ spot, history }) => {
         }}>
             <div className="frame">
                 <div className="image-container">
-                    <img src={window.index_demo} alt=""/>
+                    <img src={spot.photoUrls[0]} alt="cover photo"/>
                 </div>
 
                 <div className="figure-caption">
