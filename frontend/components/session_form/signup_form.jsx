@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class SignupForm extends React.Component {
     constructor(props) {
@@ -37,6 +37,7 @@ class SignupForm extends React.Component {
             password: ''
         });
         this.props.signup(formUser).then(() => this.props.history.push('/'));
+        this.props.closeModal();
     }
 
     render() {
@@ -86,4 +87,4 @@ class SignupForm extends React.Component {
     }
 }
 
-export default SignupForm;
+export default withRouter(SignupForm);

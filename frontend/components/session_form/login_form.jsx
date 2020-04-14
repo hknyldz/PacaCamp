@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -32,6 +32,7 @@ class LoginForm extends React.Component {
         e.preventDefault();
         const formUser = Object.assign({}, this.state)
         this.props.login(formUser).then(() => this.props.history.push('/'));
+        this.props.closeModal();
         this.setState({
             email: '',
             password: ''
@@ -41,6 +42,7 @@ class LoginForm extends React.Component {
     handleClick(e) {
         const demoUser = {email: 'happyalpaca@aa.io', password: 'humming'};
         this.props.login(demoUser).then(() => this.props.history.push('/'));
+        this.props.closeModal();
         this.setState({
             email: '',
             password: ''
@@ -89,4 +91,4 @@ class LoginForm extends React.Component {
     }
 }
 
-export default LoginForm;
+export default withRouter(LoginForm);
