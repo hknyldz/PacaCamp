@@ -13,6 +13,8 @@
 .photo-1 > img, .photo-2 > img {
     height: 480px; 
     display: block;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .photo-1 {
@@ -24,8 +26,8 @@
 }
 
 .photo-1 > img {
-    padding-right: 15px;
     object-fit: cover;
+    padding-right: 15px;
 }
 
 .photo-2 > img {
