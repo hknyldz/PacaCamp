@@ -4,6 +4,7 @@ import configureStore from './store/store';
 import Root from './components/root';
 import { signup, login, logout } from './util/session_api_util'; //TESTING
 import { fetchSpots, fetchSpot } from './actions/spot_actions'; //TESTING
+import { fetchReviews, createReview, updateReview, deleteReview } from './util/review_api_util'; //TESTING
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -28,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.dispatch = store.dispatch;
     window.fetchSpots = fetchSpots;
     window.fetchSpot = fetchSpot;
+    window.fetchReviews = fetchReviews; 
+    window.createReview = createReview;
+    window.updateReview = updateReview;
+    window.deleteReview =  deleteReview;
     //TESTING
     
     const rootEl = document.getElementById("root");

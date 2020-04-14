@@ -18,7 +18,7 @@ class SignupForm extends React.Component {
     }
 
     componentWillUnmount() {
-        this.props.clearErrors(); //will need to dispatch an action to clear session errors
+        this.props.clearErrors(); 
     }
 
     handleInput(type) {

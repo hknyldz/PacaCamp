@@ -14,8 +14,8 @@ Area.destroy_all
 Essential.destroy_all
 Amenity.destroy_all
 Detail.destroy_all
+Review.destroy_all
 # Booking.destroy_all
-# Review.destroy_all
 
 ActiveRecord::Base.connection.tables.each do |t|
   ActiveRecord::Base.connection.reset_pk_sequence!(t)
@@ -236,7 +236,7 @@ uri_hanok = Spot.create!(
     latitude: 37.582633, 
     longitude: 126.983610,
     activities: ['hiking'],
-    description: 'Uri Hanok is situated in Bukchon Hanok Village, a traditional village that dates back to the Joseon Dynasty. Formerly the residential quarters of high-ranking officials and nobility of centuries past, Bukchon Hanok Village is now home to cultural centers, guesthouses, and restaurants and many hanoks in the village remain private residences. Immerse yourself in the culture and ceremonies of traditional Korea here! Additionally, should you also like a walk on the royal side, we are also between Gyeongbokgung Palace and Changdeokgung Palace.',
+    description: 'Uri Hanok is situated in Bukchon Hanok Village, a traditional village that dates back to the Joseon Dynasty. Formerly the residential quarters of high-ranking officials and nobility of centuries past, Bukchon Hanok Village is now home to cultural centers, guesthouses, and restaurants and many hanoks in the village remain private residences. Immerse yourself in the culture and ceremonies of traditional Korea here! Additionally, should you also like a walk on the royal side, we are located between Gyeongbokgung Palace and Changdeokgung Palace.',
     rating: 100
 )
 
@@ -292,7 +292,7 @@ ar4 = Area.create!(
     num_sites: 1,
     max_guests: 4,
     lodging_provided: true,
-    lodging: '1 yurt',
+    lodging: '1 ger',
     parking: true
 )
 
@@ -465,6 +465,56 @@ de6 = Detail.create!(
     on_arrival: 'Go straight to camp',
     min_nights: 1
 )
+
+#REVIEWS
+re1 = Review.create!(
+    author_id: 7,
+    spot_id: 1, 
+    title: 'So much to see and do!',
+    body: 'Wowza! This place is a nature lover\'s cornucopia. Definitely won\'t lack for things to do. We hiked and biked all over San Pedro de Atacama and tried sandboarding for the first time!'
+)
+
+re2 = Review.create!(
+    author_id: 13,
+    spot_id: 1,
+    body: 'Luciano was an excellent host and even served as our tour guide on the first day!' 
+)
+
+re3 = Review.create!(
+    author_id: 8,
+    spot_id: 6,
+    body: 'A great place to unwind and socialize. We hit it off with the other guests, who invited us to join their bonfire on the first night.' 
+) 
+
+
+re4 = Review.create!(
+    author_id: 14,
+    spot_id: 4,
+    title: 'Unforgettable', 
+    body: "We stayed with Jennie's family during the week of the Golden Eagle Festival and boy was it a sight! It was a glorious display of culture and tradition. The main act was a feast for the eyes. Participants dressed in full eagle hunting regalia sit atop decorated horses and vie for first place on the Mongolian terrain. Awards handed out included 'Best Eagle at Hunting Prey' and 'Best Eagle at Locating Its Owner from a Distance.' Most fascinating was the bond between eagle and hunter. We learned that the eagles are domesticated and live with the hunter for years, usually around ten before they are released back to the wild."
+)
+
+re5 = Review.create!(
+    author_id: 19,
+    spot_id: 4,
+    title: 'Starry starry night',
+    body: 'Our ability to do without modern conveniences was put to the test out here, but we were forewarned. After a while you do acclimate and do as the nomads do. The lack of bathroom facilities aside, the expansive night sky was luxury enough.'
+)
+
+re6 = Review.create!(
+    author_id: 20,
+    spot_id: 3,
+    title: 'Where rice is life',
+    body: 'We loved our time here and the locals were so sweet!'
+)
+
+re7 = Review.create!(
+    author_id: 16,
+    spot_id: 5,
+    title: 'Step into the past',
+    body: 'We are grateful to Mai for hosting us and teaching us how to make tteok, steamed rice cakes. Seoul is a delightful city of dichotomies, of old and new, modern and traditional, polished and au naturel. Uri Hanok has easy access to public transportation and landmarks. Do be respecful and mindful that the village is not just an attraction. Bukchon Hanok Village gets a lot of foot traffic so residents are not crazy about their neighborhood being overrun with tourists.'
+)
+
 
 
 

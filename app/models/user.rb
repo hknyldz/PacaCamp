@@ -8,8 +8,11 @@ class User < ApplicationRecord
 
     has_many :spots,
     foreign_key: :host_id,
-    class_name: :Spot,
-    dependent: :destroy
+    class_name: :Spot
+    
+    has_many :written_reviews,
+    foreign_key: :author_id,
+    class_name: :Review
 
     # has_many :bookings,
     # foreign_key: :guest_id,

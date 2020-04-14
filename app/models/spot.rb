@@ -28,6 +28,11 @@ class Spot < ApplicationRecord
     class_name: :Detail,
     dependent: :destroy
 
+    has_many :reviews,
+    foreign_key: :spot_id,
+    class_name: :Review,
+    dependent: :destroy
+
     # area
     # validates :lodging_provided, :parking, inclusion: { in: [true, false] }
     # validates :spot_id, :num_sites, :max_guests, presence: true 
@@ -50,7 +55,5 @@ class Spot < ApplicationRecord
     # foreign_key: :spot_id, 
     # class_name: :Booking
 
-    # has_many :reviews,
-    # foreign_key: :spot_id, 
-    # class_name: :Review
+    
 end

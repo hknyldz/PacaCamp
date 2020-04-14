@@ -1,4 +1,4 @@
-import { RECEIVE_SPOTS, RECEIVE_SPOT } from "../actions/spot_actions";
+import { RECEIVE_SPOTS, RECEIVE_SPOT } from '../actions/spot_actions';
 
 const spotsReducer = (state = {}, action) => {
     Object.freeze(state); 
