@@ -147,7 +147,7 @@
     font-weight: 400;
     font-size: 19px;
     font-weight: 600;
-    letter-spacing: 1.5;
+    letter-spacing: 0.6px;
     margin-bottom: 10px;
 }
 
@@ -179,7 +179,7 @@
     width: 83%;
     font-size: 16px;
     line-height: 2;
-    letter-spacing: 0.6;
+    letter-spacing: 0.3px;
 }
 
 .spot-show .content > ul {
@@ -190,20 +190,32 @@
     font-weight: 600;
 }
 
-.spot-show .content span {
+.details .content span {
     font-weight: 600;
+}
+
+.details .content li {
+    font-size: 14.5x;
 }
 
 .spot-show .activities {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.spot-show .activities h2 {
-    font-weight: 600;
+.spot-show .activity > p {
     line-height: 1.8;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: 500px;
+
 }
 
-.spot-show .activities p {
+.spot-show .activities > h2 {
+    font-weight: 400;
+}
+
+.spot-show .activities > p {
     color: #757575;
     line-height: 1.9;
     font-weight: 300;
@@ -226,14 +238,6 @@
     width: 33%;
 }
 
-.spot-show .activities > h2 {
-    font-weight: 400;
-}
-
-.spot-show .activity h2 {
-    font-size: 20px;
-    font-weight: 400px;
-}
 
 .spot-show .activities p {
     margin-bottom: 25px;

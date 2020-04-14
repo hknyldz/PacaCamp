@@ -1,17 +1,21 @@
 import React from 'react';
 import HostDescription from './host_description';
+import ReviewIndexContainer from '../review/review_index_container';
+
 
 class SpotShow extends React.Component {
     componentDidMount() {
-        window.scrollTo(0, 0);
         this.props.fetchUsers();
         this.props.fetchSpot(this.props.match.params.spotId);
+        // this.props.fetchReviews(this.props.match.params.spotId);
+        window.scrollTo(0, 0);
     }
 
     render() {
         if ((Object.keys(this.props.users).length < 2)) return null; 
 
         if (!this.props.spot) return null;
+
        
         const { 
             area: { num_sites, max_guests, lodging_provided, lodging, parking }, 
@@ -174,7 +178,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.biking} alt="biking"/>
                     </div>
-                    <h2>Biking</h2>
+                    <p>Biking</p>
                 </div>
             );
 
@@ -183,7 +187,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.boating} alt="boating" />
                     </div>
-                    <h2>Boating</h2>
+                    <p>Boating</p>
                 </div>
             );
 
@@ -192,7 +196,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.climbing} alt="climbing" />
                     </div>
-                    <h2>Climbing</h2>
+                    <p>Climbing</p>
                 </div>
             );
 
@@ -201,7 +205,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.fishing} alt="fishing" />
                     </div>
-                    <h2>Fishing</h2>
+                    <p>Fishing</p>
                 </div>
             );
 
@@ -210,7 +214,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.hiking} alt="hiking" />
                     </div>
-                    <h2>Hiking</h2>
+                    <p>Hiking</p>
                 </div>
             );
 
@@ -219,7 +223,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.horse} alt="horse" />
                     </div>
-                    <h2>Horseback riding</h2>
+                    <p>Horseback riding</p>
                 </div>
             );
 
@@ -228,7 +232,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.paddling} alt="paddling" />
                     </div>
-                    <h2>Paddling</h2>
+                    <p>Paddling</p>
                 </div>
             );
 
@@ -237,7 +241,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.snow} alt="snow" />
                     </div>
-                    <h2>Snow sports</h2>
+                    <p>Snow sports</p>
                 </div>
             );
 
@@ -246,7 +250,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.swimming} alt="swimming" />
                     </div>
-                    <h2>Swimming</h2>
+                    <p>Swimming</p>
                 </div>
             );
 
@@ -255,7 +259,7 @@ class SpotShow extends React.Component {
                     <div>
                         <img src={window.wildlife} alt="wildlife" />
                     </div>
-                    <h2>Wildlife watching</h2>
+                    <p>Wildlife watching</p>
                 </div>
             );
         });
@@ -337,6 +341,9 @@ class SpotShow extends React.Component {
                             </div>
                         </section>
 
+                        
+                        <ReviewIndexContainer />
+                        
 
                     </div>
                 </div>
