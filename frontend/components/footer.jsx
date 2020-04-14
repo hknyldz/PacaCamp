@@ -3,6 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className="footer">
+            
             <div className="about">
                 <div className="body">
                     <div className="pacacamp">
@@ -36,6 +37,8 @@ const Footer = () => {
             <div className="message-container">
                 <p className="message">PacaCamp is created with <span className="heart">❤️</span> and hope for our future</p> 
             </div>
+
+            
         </div>
     )
 };
