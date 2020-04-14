@@ -7,16 +7,22 @@
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    width: 100%;
 }
 
-.spot-show .photo-1 img {
-    width: 720px;
+.photo-1 > img, .photo-2 > img {
+    height: 480px; 
+}
+
+.photo-1 > img {
+    padding-right: 15px;
     object-fit: cover;
 }
 
-.spot-show .photo-2 img {
+.photo-2 > img {
+    object-fit: cover;
     width: 500px;
-    object-fit: center;
+
 }
 
 .spot-show .make-room {
