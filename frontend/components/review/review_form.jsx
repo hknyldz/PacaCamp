@@ -22,6 +22,10 @@ class ReviewForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    componentWillUnmount() {
+        this.props.clearErrors();
+    }
+
     handleInput(field) {
         return (event) => this.setState({ [field]: event.currentTarget.value });
     }
@@ -38,22 +42,25 @@ class ReviewForm extends React.Component {
 
     render() {
         if (!this.props.currentUserId) return null;
+
+        const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
+        let errorsClass;
+        errorsClass = errors.length ? "errors" : null;
+        const errorsUl = <ul className={errorsClass}>{errors}</ul>;
+
         return (
             <div className="review-form">
-                <div className="left"><img src={window.avatar} alt="avatar" /></div>
+                    <h3>{this.props.formType}</h3>
 
-                <div className="right">
-                    <h3>Write a review</h3>
+                    {errorsUl}
                     <form onSubmit={this.handleSubmit}>
-                        
+
                         <input
                             onChange={this.handleInput('title')}
                             type="text"
                             placeholder="Title"
                             value={this.state.title}
                         />
-                    
-
                     
                         <textarea
                             onChange={this.handleInput('body')}
@@ -64,7 +71,6 @@ class ReviewForm extends React.Component {
 
                         <button type="submit">{this.props.formType}</button>
                     </form>
-                </div>
             </div>
         );
     }

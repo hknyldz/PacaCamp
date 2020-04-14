@@ -32,10 +32,13 @@ class LoginForm extends React.Component {
         // console.log(this.props.match.path);
         e.preventDefault();
         const formUser = Object.assign({}, this.state)
-        this.props.login(formUser).then(() => this.props.history.push('/'));
+        this.props.login(formUser).then(() => {
+            this.props.history.push('/');
+            this.props.closeModal();
+        });
             // if ((this.props.match.path === '/login') || (this.props.match.path === '/signup'))
             // {this.props.history.push('/')}
-        this.props.closeModal();
+        // this.props.closeModal();
         this.setState({
             email: '',
             password: ''

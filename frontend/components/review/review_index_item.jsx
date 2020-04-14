@@ -8,8 +8,8 @@ const ReviewIndexItem = ({ review, users, currentUserId, deleteReview }) => {
     if (currentUserId === review.author_id) {
         buttons = (
             <div className="buttons">
-                <button><i class="far fa-edit"></i>&nbsp;Update</button>
-                <button onClick={() => deleteReview(review.id)}><i class="far fa-trash-alt"></i>&nbsp;Delete</button>
+                <button><i className="far fa-edit"></i>&nbsp;Update</button>
+                <button onClick={() => deleteReview(review.id)}><i className="far fa-trash-alt"></i>&nbsp;Delete</button>
             </div>
         )
     } else {
