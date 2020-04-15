@@ -8,6 +8,16 @@ const SpotIndexItem = ({ spot, history }) => {
     } else {
         lodge_mode = <span><img src={window.tent} alt="tent"/><img src={window.rv} alt="rv"/></span>
     }
+
+    let numReview;
+    if (spot.review_ids.length < 1) {
+        numReview = null;
+    } else if (spot.review_ids.length === 1) {
+        numReview = ' — 1 Review';
+    } else {
+        numReview = ` — ${spot.review_ids.length} Reviews`
+    } 
+
     return (
         <div className="spot-index-item" onClick={(e) => {
             e.stopPropagation();
@@ -41,7 +51,7 @@ const SpotIndexItem = ({ spot, history }) => {
                             </span>
                             &nbsp;
                             <span className="reviews">
-                                —  num_review
+                                {numReview}
                             </span>
                         </div>
 
