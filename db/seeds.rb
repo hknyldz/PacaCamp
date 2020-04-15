@@ -15,7 +15,7 @@ Essential.destroy_all
 Amenity.destroy_all
 Detail.destroy_all
 Review.destroy_all
-# Booking.destroy_all
+Booking.destroy_all
 
 ActiveRecord::Base.connection.tables.each do |t|
   ActiveRecord::Base.connection.reset_pk_sequence!(t)

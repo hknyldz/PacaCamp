@@ -1,13 +1,13 @@
 import React from 'react';
 import HostDescription from './host_description';
 import ReviewIndexContainer from '../review/review_index_container';
+import BookingFormContainer from '../booking/booking_form_container';
 
 
 class SpotShow extends React.Component {
     componentDidMount() {
         this.props.fetchUsers();
         this.props.fetchSpot(this.props.match.params.spotId);
-        // this.props.fetchReviews(this.props.match.params.spotId);
         window.scrollTo(0, 0);
     }
 
@@ -346,6 +346,8 @@ class SpotShow extends React.Component {
                         
 
                     </div>
+
+                    <BookingFormContainer />
                 </div>
 
             </div>

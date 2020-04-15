@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guest_id: 1
+  spot_id: 1
+  num_guests: 1
+  checkin_date: 2020-04-15
+  checkout_date: 2020-04-15
+  total: 1
+
+two:
+  guest_id: 1
+  spot_id: 1
+  num_guests: 1
+  checkin_date: 2020-04-15
+  checkout_date: 2020-04-15
+  total: 1

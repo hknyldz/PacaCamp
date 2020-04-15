@@ -1,6 +1,7 @@
 class Api::ReviewsController < ApplicationController
     def index
         @reviews = Review.where(spot_id: params[:spot_id])
+
         if @reviews.length > 0
             render :index
         else 
@@ -28,6 +29,7 @@ class Api::ReviewsController < ApplicationController
 
     def destroy
         @review = Review.find(params[:id]) 
+
         if @review.destroy
             render :show
         else

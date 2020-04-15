@@ -3,8 +3,7 @@ class Spot < ApplicationRecord
 
     belongs_to :host,
     foreign_key: :host_id,
-    class_name: :User,
-    dependent: :destroy
+    class_name: :User
 
     has_many_attached :photos
 
@@ -32,6 +31,11 @@ class Spot < ApplicationRecord
     foreign_key: :spot_id,
     class_name: :Review,
     dependent: :destroy
+    
+    has_many :bookings,
+    foreign_key: :spot_id, 
+    class_name: :Booking,
+    dependent: :destroy
 
     # area
     # validates :lodging_provided, :parking, inclusion: { in: [true, false] }
@@ -51,9 +55,6 @@ class Spot < ApplicationRecord
 
     # has_many_attached :photos
 
-    # has_many :bookings,
-    # foreign_key: :spot_id, 
-    # class_name: :Booking
 
     
 end

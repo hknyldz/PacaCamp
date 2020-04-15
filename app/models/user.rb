@@ -8,15 +8,20 @@ class User < ApplicationRecord
 
     has_many :spots,
     foreign_key: :host_id,
-    class_name: :Spot
+    class_name: :Spot,
+    dependent: :destroy
     
     has_many :written_reviews,
     foreign_key: :author_id,
     class_name: :Review
 
-    # has_many :bookings,
-    # foreign_key: :guest_id,
-    # class_name: :Booking
+    has_many :bookings,
+    foreign_key: :guest_id,
+    class_name: :Booking,
+    dependent: :destroy
+
+    has_many :guests,
+    through: :bookings
 
     attr_reader :password
 
