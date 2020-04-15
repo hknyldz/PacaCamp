@@ -3,8 +3,9 @@ import { closeModal } from '../actions/modal_actions';
 import { connect } from 'react-redux';
 import SignupFormContainer from './session_form/signup_form_container';
 import LoginFormContainer from './session_form/login_form_container';
+import EditReviewFormContainer from './review/edit_review_form_container';
 
-function Modal({ modal, closeModal }) {
+const Modal = ({ modal, closeModal }) => {
     if (!modal) {
         return null;
     }
@@ -25,6 +26,13 @@ function Modal({ modal, closeModal }) {
                 </div>
             );
             break;
+        case 'editReview':
+            component = (
+                <div className="review-modal" onClick={e => e.stopPropagation()}>
+                    <EditReviewFormContainer />
+                </div>
+            );
+            break;
         default:
             return null;
     }
@@ -37,7 +45,7 @@ function Modal({ modal, closeModal }) {
 }
 
 const mapStateToProps = state => ({
-    modal: state.ui.modal
+    modal: state.ui.modal.modal
 });
 
 const mapDispatchToProps = dispatch => ({

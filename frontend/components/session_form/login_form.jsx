@@ -38,7 +38,6 @@ class LoginForm extends React.Component {
         });
             // if ((this.props.match.path === '/login') || (this.props.match.path === '/signup'))
             // {this.props.history.push('/')}
-        // this.props.closeModal();
         this.setState({
             email: '',
             password: ''

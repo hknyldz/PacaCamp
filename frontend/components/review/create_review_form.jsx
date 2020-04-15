@@ -10,7 +10,7 @@ controlled inputs and trigger the `action` passed in from the container upon
 submission. Use a text input for the title and a textarea for the body.
 */
 
-class ReviewForm extends React.Component {
+class CreateReviewForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
@@ -31,7 +31,7 @@ class ReviewForm extends React.Component {
     }
 
     handleSubmit(event) {
-        event.preventDefault;
+        event.preventDefault();
         this.props.action(this.state);
         this.setState({
             title: '',
@@ -69,11 +69,11 @@ class ReviewForm extends React.Component {
                         />
                     
 
-                        <button type="submit">{this.props.formType}</button>
+                        <button type="submit">Submit review</button>
                     </form>
             </div>
         );
     }
 }
 
-export default withRouter(ReviewForm);
+export default withRouter(CreateReviewForm);

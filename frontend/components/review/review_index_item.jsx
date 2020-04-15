@@ -1,4 +1,5 @@
 import React from 'react';
+import { openModal } from '../../actions/modal_actions';
 
 const ReviewIndexItem = ({ review, users, currentUserId, deleteReview }) => {
     const dateOptions = { month: "long", day: "numeric", year: "numeric" };
@@ -8,7 +9,7 @@ const ReviewIndexItem = ({ review, users, currentUserId, deleteReview }) => {
     if (currentUserId === review.author_id) {
         buttons = (
             <div className="buttons">
-                <button><i className="far fa-edit"></i>&nbsp;Update</button>
+                <button onClick={() => dispatch(openModal('editReview', review.id))}><i className="far fa-edit"></i>&nbsp;Update</button>
                 <button onClick={() => deleteReview(review.id)}><i className="far fa-trash-alt"></i>&nbsp;Delete</button>
             </div>
         )

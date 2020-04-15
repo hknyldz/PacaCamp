@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ReviewForm from './review_form';
+import CreateReviewForm from './create_review_form';
 import { createReview, clearErrors } from '../../actions/review_actions';
 /*
 Export a container component for the `ReviewForm` that will be used to create a
@@ -20,6 +20,6 @@ const mdp = (dispatch) => ({
     clearErrors: () => dispatch(clearErrors()),
 });
 
-const CreateReviewFormContainer = connect(msp, mdp)(ReviewForm);
+const CreateReviewFormContainer = connect(msp, mdp)(CreateReviewForm);
 
 export default CreateReviewFormContainer;
