@@ -37,7 +37,7 @@ class BookingForm extends React.Component {
         if (!this.props.currentUserId) {
             this.props.openModal('login');
         } else {
-            this.props.createBooking(booking).then(() => this.props.history.push(`/users/${this.props.currentUserId}`));
+            this.props.createBooking(booking).then(() => this.props.history.push(`/users/${this.props.currentUserId}/trips`));
         }
     }
 
@@ -62,6 +62,31 @@ class BookingForm extends React.Component {
     }
 
     render() {
+
+        let totalCalc;
+        if (this.state.checkin_date && this.state.checkout_date) {
+            const spot = this.props.spots[this.props.match.params.spotId];
+            let total;
+            const checkin = this.state.checkin_date;
+            const checkout = this.state.checkout_date;
+            const numNights = Math.ceil((checkout - checkin) / (1000 * 60 * 60 * 24));
+            const singPlur = numNights === 1 ? "night" : "nights";
+            total = numNights * spot.price;
+            totalCalc = (
+                <div className="total-calc">
+                    <div className="label">Total</div>
+                    <div className="calculation">
+                        <div>
+                            ${spot.price} x {numNights} {singPlur}
+                        </div>
+
+                        <div className="total">${total}</div>
+                    </div>
+                </div>
+            )
+        } else {
+            totalCalc = null;
+        }
 
         return (
             <div className="booking-form">
@@ -106,6 +131,8 @@ class BookingForm extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                {totalCalc}
 
                 <div className="btn-container"><button onClick={this.handleSubmit}>Instant book</button></div>
 

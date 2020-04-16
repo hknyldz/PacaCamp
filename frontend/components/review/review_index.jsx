@@ -3,12 +3,6 @@ import ReviewIndexItem from './review_index_item';
 import { withRouter } from 'react-router-dom';
 import CreateReviewFormContainer from './create_review_form_container';
 
-/*
-Export a `ReviewIndex` presentational component that renders a list (`ul`) of
-`ReviewIndexItems`. This component should receive `Reviews` from the store as a prop
-via its container and fetch them once it has successfully mounted to the DOM.
-Below the `ul`, render the `CreateReviewFormContainer` component.
-*/
 
 class ReviewIndex extends React.Component {
     componentDidMount() {

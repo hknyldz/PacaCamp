@@ -280,7 +280,7 @@ class SpotShow extends React.Component {
                         <section className="header-container">
                             <p className="country-location">{this.props.spot.country} &nbsp; <span className="arrow">></span> &nbsp; {this.props.spot.location} &nbsp; <span className="arrow">></span></p>
 
-                            <h1 className="name">{this.props.spot.name}&nbsp;<span className="check"><i id="check-icon" className="fas fa-check-circle fa-xs" aria-hidden="true"></i></span></h1>
+                            <h1 className="name">{this.props.spot.name}&nbsp;<span className="check"></span></h1>
                             
                             <div className="rating">
                                 <span className="turquoise">

@@ -10,14 +10,14 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink }) => {
 
             <div className="user-menu">
                 <div className="trips">
-                    <a href="">Trips</a>
+                    <Link to={`/users/${currentUser.id}/trips`}>Trips</Link>
                 </div>
 
                 <div className="dropdown-container">
                     <img className="alpaca" src={window.alpaca} alt="alpaca"/>
                     
                     <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="">Manage account</a></li>
+                        <li><Link to={`/users/${currentUser.id}`} className="dropdown-item">Manage account</Link></li>
                         <li className="divider"></li>
                         <li><span
                         className="dropdown-item" onClick={logout}>Log out</span></li>    
