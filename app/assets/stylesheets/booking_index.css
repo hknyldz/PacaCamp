@@ -123,6 +123,11 @@
     letter-spacing: 0.4px;
 }
 
+.booking-index .booking-items {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .booking-index .booking-item {
     border-bottom: 1px solid #ebebeb;
     margin: 15px 0px;

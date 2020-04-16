@@ -70,7 +70,7 @@ class BookingIndex extends React.Component {
 
                 <div className="booking-index">
                     {numTrips}
-                    <ul className="">
+                    <ul className="booking-items">
                         {this.props.bookings.map((booking) => 
                         <BookingIndexItem
                             key={booking.id}
