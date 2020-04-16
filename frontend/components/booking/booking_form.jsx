@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
-import 'react-day-picker/lib/style.css';
+// import 'react-day-picker/lib/style.css';
 
 class BookingForm extends React.Component {
     constructor(props) {
