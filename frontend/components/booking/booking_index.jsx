@@ -12,17 +12,17 @@ class BookingIndex extends React.Component {
 
         let numTrips;
         if (this.props.bookings.length === 1) {
-            numTrips = <div>
-                            <h2>1 Trip</h2>
+            numTrips = <div className="num-trips">
+                            <span>1 Trip</span>
                         </div> 
         } else if (this.props.bookings.length === 0) { 
-            numTrips = <div>
-                            <h2>0 Trips</h2>
-                            <p>No past trips. Let's get you outside!</p>
+            numTrips = <div className="num-trips">
+                            <span>0 Trips</span>
+                            <p className="no-trips">No past trips. Let's get you outside!</p>
                         </div> 
         } else {
-            numTrips = <div>
-                            <h2>{`${this.props.bookings.length} Trips`}</h2>
+            numTrips = <div className="num-trips">
+                            <span>{`${this.props.bookings.length} Trips`}</span>
                         </div>
         }
 
@@ -37,20 +37,21 @@ class BookingIndex extends React.Component {
                             <img src={window.avatar} alt="avatar"/>
                             <div className="name-details">
                                 <div>
-                                    <span>{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}</span>
-                                    <span>
+                                    <div className="name">{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}</div>
+                                    <div>
                                         <i id="check-icon" className="fas fa-check-circle fa-xs" aria-hidden="true"></i>
                                         &nbsp;
                                         <span className="host">Host</span>
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className="member-since">
                             <div>
-                                <span className="heart">❤️</span>
-                                        PacaCamper since {date}
+                                <i className="fas fa-heart"></i>
+                                &nbsp;&nbsp;
+                                <span>PacaCamper since {date}</span> 
                             </div>
 
                             <Link to={`/users/${this.props.currentUser.id}`}>Edit profile</Link>
@@ -59,13 +60,17 @@ class BookingIndex extends React.Component {
 
                     <div className="bottom">
                         <h3>Trusted PacaCamper</h3>
-                        <p><i className="far fa-check-circle"></i>&nbsp;Email address</p>
+                        <p>
+                            <i className="fas fa-check-circle"></i>
+                            &nbsp;
+                            <span className="email">Email address</span>
+                            </p>
                     </div>
                 </div>
 
                 <div className="booking-index">
                     {numTrips}
-                    <ul>
+                    <ul className="">
                         {this.props.bookings.map((booking) => 
                         <BookingIndexItem
                             key={booking.id}

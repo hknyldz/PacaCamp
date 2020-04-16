@@ -17,20 +17,21 @@ class BookingIndexItem extends React.Component {
                 <div className="booking-item">
                     <div className="item-details">
                         <Link to={`/spots/${spot.id}`}>{spot.name}</Link> 
-                        <div>
+                        <div className="body">
                             <img onClick={() => this.props.history.push(`/spots/${spot.id}`)} src={spot.photoUrls[0]} alt="cover photo"/>
                             <ul>
-                                <li><span>Check in:</span>{this.props.booking.checkin_date}</li>
-                                <li><span>Check out:</span>{this.props.booking.checkout_date}</li>
-                                <li><span>Number of nights:</span>{numNights}</li>
-                                <li><span>Number of guests:</span>{this.props.booking.num_guests}</li>
-                                <li><span>Total:</span>${total}</li>
+                                <li><span className="bold">Check in: &nbsp;</span>{this.props.booking.checkin_date}</li>
+                                <li><span className="bold">Check out:  &nbsp;</span>{this.props.booking.checkout_date}</li>
+                                <li><span className="bold">Number of nights:  &nbsp;</span>{numNights}</li>
+                                <li><span className="bold">Number of guests:  &nbsp;</span>{this.props.booking.num_guests}</li>
+                                <li><span className="bold">Total:  &nbsp;</span>${total}</li>
                             </ul>
                         </div>
-                    </div>
 
-                    <div>
-                    <button onClick={() => this.props.deleteBooking(this.props.booking.id)}><i className="far fa-trash-alt"></i>&nbsp;Delete</button>
+                        <div className="review-delete">
+                            <Link to={`/spots/${spot.id}`}>Leave a review</Link>
+                            <button onClick={() => this.props.deleteBooking(this.props.booking.id)}><i className="far fa-times-circle"></i>&nbsp;Cancel booking</button>
+                        </div>
                     </div>
                 </div>
         )
