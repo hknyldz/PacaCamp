@@ -1,0 +1,92 @@
+.booking-form {
+    width: 319px;
+    border: 1px solid #ebebeb;
+}
+
+.booking-form .price-per-night {
+    padding: 13px 10px;
+}
+
+.booking-form .price {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.booking-form .per-night {
+    color: #757575;
+    font-size: 13.5px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+}
+
+.booking-form .form-fields {
+    display: flex;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+}
+
+.booking-form .form-fields > div {
+    padding: 10px;
+    letter-spacing: 0.3px;
+}
+
+.form-fields .checkin, .form-fields .checkout {
+    border-right: 1px solid #ebebeb;
+}
+
+.form-fields .checkin, .form-fields .checkout {
+    width: 36%;
+    cursor: pointer;
+}
+
+.form-fields .checkin:hover, .form-fields .checkout:hover {
+    background-color: #f9f9f9;
+}
+
+.form-fields .label {
+    font-size: 15.5px;
+    padding-bottom: 8.5px;
+}
+
+.form-fields input {
+    cursor: pointer;
+}
+
+.form-fields input::placeholder {
+    font-size: 15.5px;
+    color: #757575;
+}
+
+.form-fields .guests {
+    width: 28%;
+}
+
+.booking-form .up-down-btn {
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.booking-form .btn-container {
+    padding: 10px;
+}
+
+.btn-container > button {
+    width: 100%;
+    border: 3px solid #40d9ac;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3333333;
+    color: #fff;
+    background-color: #40d9ac;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+}
+
+.btn-container > button:hover {
+    background-color: #fff;
+    color: #40d9ac;
+}

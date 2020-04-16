@@ -31,7 +31,7 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         // console.log(this.props.match.path);
         e.preventDefault();
-        const formUser = Object.assign({}, this.state)
+        const formUser = Object.assign({}, this.state);
         this.props.login(formUser).then(() => {
             this.props.history.push('/');
             this.props.closeModal();

@@ -273,6 +273,9 @@ class SpotShow extends React.Component {
                 </div>
 
                 <div className="make-room"> 
+
+                    <BookingFormContainer />
+                    
                     <div className="spot-show-body">
                         <section className="header-container">
                             <p className="country-location">{this.props.spot.country} &nbsp; <span className="arrow">></span> &nbsp; {this.props.spot.location} &nbsp; <span className="arrow">></span></p>
@@ -341,13 +344,9 @@ class SpotShow extends React.Component {
                             </div>
                         </section>
 
-                        
                         <ReviewIndexContainer />
-                        
 
                     </div>
-
-                    <BookingFormContainer />
                 </div>
 
             </div>
