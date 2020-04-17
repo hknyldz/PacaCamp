@@ -150,6 +150,10 @@
     display: block;
 }
 
+.booking-item img:hover {
+    cursor: pointer;
+}
+
 .booking-item .body {
     display: flex;
     margin-top: 15px;
