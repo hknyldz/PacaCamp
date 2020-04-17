@@ -10,8 +10,8 @@ class BookingIndexItem extends React.Component {
         if (!this.props.spots[this.props.booking.spot_id]) return null;
 
         const spot = this.props.spots[this.props.booking.spot_id]
-        const numNights = Math.ceil((Date.parse(this.props.booking.checkout_date) - Date.parse(this.props.booking.checkin_date)) / (1000 * 60 * 60 * 24));
-        const total = numNights * spot.price;
+        // const numNights = Math.ceil((Date.parse(this.props.booking.checkout_date) - Date.parse(this.props.booking.checkin_date)) / (1000 * 60 * 60 * 24));
+        // const total = numNights * spot.price;
 
         return (
                 <div className="booking-item">
@@ -24,7 +24,7 @@ class BookingIndexItem extends React.Component {
                                 <li><span className="bold">Check out:  &nbsp;</span>{this.props.booking.checkout_date}</li>
                                 <li><span className="bold">Number of nights:  &nbsp;</span>{numNights}</li>
                                 <li><span className="bold">Number of guests:  &nbsp;</span>{this.props.booking.num_guests}</li>
-                                <li><span className="bold">Total:  &nbsp;</span>${total}</li>
+                                <li><span className="bold">Total:  &nbsp;</span>${this.props.booking.total}</li>
                             </ul>
                         </div>
 
