@@ -135,12 +135,13 @@
 
 .spot-show .features img {
     width: 27px;
-    color: #757575;
+    color: #333333;
 }
 
 .spot-show .features div {
-    color: #757575;
+    color: #333333;
     font-size: 15px;
+    font-weight: 300;
 }
 
 .spot-show .features h2 {
