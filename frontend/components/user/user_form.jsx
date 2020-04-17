@@ -28,6 +28,7 @@ class UserForm extends React.Component {
 
     render() {
         if (this.props.currentUser.id !== parseInt(this.props.userId)) return null;
+        if (this.props.currentUser.id === 1) return null;
 
         const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
         let errorsClass;
