@@ -77,3 +77,19 @@
     background-color: #3cc69e;
     cursor: pointer;
 }
+
+.user-edit-form  .errors {
+    padding: 15px 14px;
+    margin-bottom: 22px;
+    background-color: #fdf0ef;
+    border-color: transparent;
+    border-radius: 2px;
+    text-align: left;
+    width: 97%; 
+}
+
+.user-edit-form .errors li {
+    font-size: 13px;
+    color: #c44841;
+    font-weight: 300;
+} 
