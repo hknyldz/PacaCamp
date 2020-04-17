@@ -1,0 +1,79 @@
+.user-edit-form {
+    position: relative;
+    top: 115px;
+    display: flex;
+    border-top: 1px solid #ebebeb;
+}
+
+.user-edit-form .left, .user-edit-form .right {
+    width: 20%;
+    background-color: #f9f9f9;;
+    padding: 50px 0px;
+}
+
+.user-edit-form .body {
+    width: 60%;
+    padding: 50px;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+}
+
+.user-edit-form h3 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.user-edit-form form {
+    border: 1px solid #ebebeb;
+    margin-bottom: 50px;
+}
+
+.user-edit-form .params {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.user-edit-form .border-bottom{
+    border-bottom: 1px solid #ebebeb;
+}
+
+.user-edit-form .right-col {
+    width: 65%;
+}
+
+.user-edit-form .params > span {
+    width: 35%;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.user-edit-form .params p {
+    font-size: 12px;
+    color: #757575;
+    line-height: 1.7; 
+    font-weight: 300;
+}
+
+.user-edit-form .params input {
+    font-weight: 300;
+    letter-spacing: 0.4px;
+} 
+
+.user-edit-form .update-btn {
+    padding: 15px 20px;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+    color: #fff;
+    background-color: #40d9ac;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+}
+
+.user-edit-form .update-btn:hover {
+    background-color: #3cc69e;
+    cursor: pointer;
+}

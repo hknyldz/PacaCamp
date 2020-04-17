@@ -6,7 +6,7 @@ import NavBarContainer from './nav_bar/nav_bar_container';
 import Modal from './modal';
 import Splash from './splash';
 import BookingIndexContainer from './booking/booking_index_container';
-import UserShow from './user/user_show';
+import EditUserFormContainer from './user/edit_user_form_container';
 import SpotShowContainer from './spot/spot_show_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import LoginFormContainer from './session_form/login_form_container';
@@ -17,7 +17,7 @@ const App = () => (
         <NavBarContainer />
         <Modal />
         <ProtRoute exact path='/users/:userId/trips' component={BookingIndexContainer}></ProtRoute>
-        <ProtRoute exact path='/users/:userId' component={UserShow}></ProtRoute>
+        <ProtRoute exact path='/users/:userId' component={EditUserFormContainer}></ProtRoute>
         <Route exact path='/' component={Splash}></Route>
         <Route exact path='/spots/:spotId' component={SpotShowContainer}></Route>
         <AuthRoute exact path='/signup' component={SignupFormContainer}></AuthRoute>
