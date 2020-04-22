@@ -30,7 +30,7 @@ const Splash = () => {
                 <div className="sun-bill">
                     <img src={window.sun_bill} alt="sun bill" />
                     <h2>Creating sustainable revenue and fostering community.</h2>
-                    <a href="">Learn more</a>
+                    <a href=""></a>
                 </div>
 
                 <div className="palm-eye">
