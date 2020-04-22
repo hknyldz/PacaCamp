@@ -39,11 +39,13 @@ class EditReviewForm extends React.Component {
                     <input
                         onChange={this.handleInput('title')}
                         type="text"
+                        placeholder={this.props.review.title}
                         value={this.state.title}
                     />
 
                     <textarea
                         onChange={this.handleInput('body')}
+                        placeholder={this.props.review.body}
                         value={this.state.body}
                     />
 
