@@ -278,7 +278,7 @@ class SpotShow extends React.Component {
                     
                     <div className="spot-show-body">
                         <section className="header-container">
-                            <p className="country-location">{this.props.spot.country} &nbsp; <span className="arrow">></span> &nbsp; {this.props.spot.location} &nbsp; <span className="arrow">></span></p>
+                            <p className="country-location">{this.props.spot.country} &nbsp; <span className="arrow"><i class="fas fa-angle-right"></i></span> &nbsp; {this.props.spot.location} &nbsp; <span className="arrow"><i class="fas fa-angle-right"></i></span></p>
 
                             <h1 className="name">{this.props.spot.name}&nbsp;<span className="check"></span></h1>
                             

@@ -51,9 +51,8 @@
 }
 
 .spot-show .arrow {
-    font-family: Arial;
-    font-size: 13px;
-    color: #757575;
+    font-size: 14px;
+    color:  rgb(194, 190, 190);
 }
 
 .spot-show .name {
