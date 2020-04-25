@@ -56,12 +56,12 @@ class CreateReviewForm extends React.Component {
                     
                         <textarea
                             onChange={this.handleInput('body')}
-                            placeholder="Share your experience"
+                            placeholder="Have you camped here? Leave a review for your fellow PacaCampers!"
                             value={this.state.body}
                         />
                     
 
-                        <button type="submit">Submit review</button>
+                        <button type="submit">Post</button>
                     </form>
             </div>
         );
