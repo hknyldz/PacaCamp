@@ -71,7 +71,7 @@
 
 .edit-review-form input::placeholder, .edit-review-form textarea::placeholder {
     color: #757575;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 
