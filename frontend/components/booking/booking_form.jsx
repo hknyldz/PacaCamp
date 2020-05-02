@@ -17,6 +17,10 @@ class BookingForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    componentWillUnmount() {
+        this.props.clearErrors();
+    }
+
     handleSubmit(e) {
         e.preventDefault();
 
@@ -62,6 +66,11 @@ class BookingForm extends React.Component {
     }
 
     render() {
+
+        const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
+        let errorsClass;
+        errorsClass = errors.length ? "errors" : null;
+        const errorsUl = <ul className={errorsClass}>{errors}</ul>;
 
         let totalCalc;
         if (this.state.checkin_date && this.state.checkout_date) {
@@ -133,6 +142,10 @@ class BookingForm extends React.Component {
                 </div>
 
                 {totalCalc}
+
+                
+                {errorsUl}
+                
 
                 <div className="btn-container"><button onClick={this.handleSubmit}>Instant book</button></div>
 
