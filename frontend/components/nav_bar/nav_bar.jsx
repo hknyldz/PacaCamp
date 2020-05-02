@@ -9,7 +9,19 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink }) => {
             </div>
 
             <div className="user-menu">
-                <div className="trips">
+                <div className="navlinks">
+                    <a id="github" href="https://github.com/aimyaa/PacaCamp" target="_blank">
+                        <i class="fab fa-github"></i>&nbsp;Github
+                    </a>
+
+                    <a id="linkedin" href="" target="_blank">
+                        <i class="fab fa-linkedin"></i>&nbsp;LinkedIn
+                    </a>
+
+                    <a id="angellist" href="" target="_blank">
+                        <i class="fab fa-angellist"></i>&nbsp;AngelList
+                    </a>
+
                     <Link to={`/users/${currentUser.id}/trips`}>Trips</Link>
                 </div>
 
@@ -35,6 +47,18 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink }) => {
             
     
             <div className="guest-menu">
+                <a id="github" href="https://github.com/aimyaa/PacaCamp" target="_blank">
+                    <i class="fab fa-github"></i>&nbsp;Github
+                </a>
+
+                <a id="linkedin" href="" target="_blank">
+                    <i class="fab fa-linkedin"></i>&nbsp;LinkedIn
+                </a>
+
+                <a id="angellist" href="" target="_blank">
+                    <i class="fab fa-angellist"></i>&nbsp;AngelList
+                </a>
+
                 {loginLink}
                 {signupLink}
             </div>

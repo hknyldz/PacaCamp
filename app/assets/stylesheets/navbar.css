@@ -23,6 +23,10 @@
     font-weight: bold;
 }
 
+.navbar i {
+    font-size: 22px;
+}
+
 .guest-menu a {
     padding: 5px;
     margin: 0px 5px;
@@ -44,14 +48,14 @@
     align-items: center;
 }
 
-.trips a {
+.navlinks a {
     padding: 5px;
     margin: 0px 5px;
     font-size: 15px;
     font-weight: 300;
 }
 
-.trips a:hover {
+.navlinks a:hover {
     border-bottom: 3px solid #40d9ac;
 }
 
