@@ -162,6 +162,13 @@ jacqueline_caron = User.create!(
     password: 'mulberry'
 )
 
+alli_olgeirsson  = User.create!(
+    first_name: 'Alli',
+    last_name: 'Olgeirsson',
+    email: 'alliolgeirsson@aa.io',
+    password: 'cinnabar'
+)
+
 #SPOTS
 pueblo_machuca = Spot.create!(
     name: 'Pueblo Machuca',
@@ -259,6 +266,103 @@ grandall_vineyard = Spot.create!(
 grandall_vineyard.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/11.jpg'), filename: '11.jpg')
 grandall_vineyard.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/12.jpg'), filename: '12.jpg')
 
+volcano_hut = Spot.create!(
+    name: 'Volcano Hut',
+    host_id: 21, 
+    price: 75,
+    location: 'Laugavegur',
+    country: 'Iceland',
+    latitude: 63.990708, 
+    longitude: -19.060590,
+    activities: ['hiking'],
+    description: 'Begin hiking the  Laugavegur Trail here. The trail is hailed among the world\'s most beautiful treks and for good reason. The trail links a variety of landscapes on it 55km (34mi) path, from volcanic mountains, lava fields, and bubbling hot springs to glaciers, arctic deserts, and green valleys. Most travelers trek the trail from north to south in 3 to 5 days. Come prepared for unpredictable weather!',
+    rating: 99
+)
+
+volcano_hut.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/13.jpg'), filename: '13.jpg')
+volcano_hut.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/14.jpg'), filename: '14.jpg')
+
+tiosh_abaj = Spot.create!(
+    name: 'Tiosh Abaj',
+    host_id: 4, 
+    price: 65,
+    location: 'Santiago Atitlán',
+    country: 'Guatemala',
+    latitude: 14.641408,  
+    longitude: -91.232524,
+    activities: ['boating', 'hiking', 'biking'],
+    description: 'Tiosh Abaj is situated in one of the Mayan towns encircling Lake Atitlán and no trip to Guatemala is complete without a visit to Lake Atitlán. While you\'re here scale the San Pedro Volcano, have a long, hot soak in the thermal baths, hike La Nariz at sunrise, and browse artisan markets.',
+    rating: 97
+)
+
+tiosh_abaj.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/15.jpg'), filename: '15.jpg')
+tiosh_abaj.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/16.jpg'), filename: '16.jpg')
+
+blues_retreat = Spot.create!(
+    name: 'Blues Retreat',
+    host_id: 15, 
+    price: 70,
+    location: 'Big Sur, California',
+    country: 'United States',
+    latitude: 36.255028,
+    longitude: -121.815702,
+    activities: ['hiking', 'biking', 'wildlife watching'],
+    description: 'We are here to provide respite and refuge. Shake the dust off your work-worn spirit. Recharge your batteries. Breathe. Glance up at the sky. Look in the direction of the mountains. Feel the earth beneath you. Just be.',
+    rating: 98
+)
+
+blues_retreat.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/17.jpg'), filename: '17.jpg')
+blues_retreat.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/18.jpg'), filename: '18.jpg')
+
+joshua_mojave = Spot.create!(
+    name: 'Joshua Mojave',
+    host_id: 14, 
+    price: 80,
+    location: 'Sandy Valley, Nevada',
+    country: 'United States',
+    latitude: 35.871525, 
+    longitude: -115.584931,
+    activities: ['hiking', 'wildlife watching'],
+    description: 'Secluded, open desert.',
+    rating: 95
+)
+
+joshua_mojave.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/19.jpg'), filename: '19.jpg')
+joshua_mojave.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/20.jpg'), filename: '20.jpg')
+
+red_open = Spot.create!(
+    name: 'Red Open',
+    host_id: 5, 
+    price: 100,
+    location: 'Sedona, Arizona',
+    country: 'United States',
+    latitude: 34.893644,  
+    longitude: -111.848977,
+    activities: ['biking', 'hiking', 'wildlife watching'],
+    description: 'Enjoy this little slice of heaven amidst red sandstone formations.',
+    rating: 97
+)
+
+red_open.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/21.jpg'), filename: '21.jpg')
+red_open.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/22.jpg'), filename: '22.jpg')
+
+teton_clearing = Spot.create!(
+    name: 'Teton Clearing',
+    host_id: 12, 
+    price: 85,
+    location: 'Wapiti, Wyoming',
+    country: 'United States',
+    latitude: 44.460934, 
+    longitude:  -109.497220,
+    activities: ['snow sports', 'paddling', 'biking', 'hiking', 'horseback riding', 'wildlife watching'],
+    description: 'Alone but not lonely.',
+    rating: 96
+)
+
+teton_clearing.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/23.jpg'), filename: '23.jpg')
+teton_clearing.photos.attach(io: open('https://s3.amazonaws.com/pacacamp-seeds/24.jpg'), filename: '24.jpg')
+
+
 #AREAS
 ar1 = Area.create!(
     spot_id: 1,
@@ -313,6 +417,59 @@ ar6 = Area.create!(
     parking: true 
 )
 
+ar7 = Area.create!(
+    spot_id: 7, 
+    num_sites: 1,
+    max_guests: 5,
+    lodging_provided: true,
+    lodging: '1 hut',
+    parking: true
+)
+
+ar8 = Area.create!(
+    spot_id: 8, 
+    num_sites: 1,
+    max_guests: 6,
+    lodging_provided: true,
+    lodging: '1 lodge',
+    parking: true
+)
+
+ar9 = Area.create!(
+    spot_id: 9, 
+    num_sites: 3,
+    max_guests: 18,
+    lodging_provided: false,
+    parking: true
+)
+
+ar10 = Area.create!(
+    spot_id: 10, 
+    num_sites: 1,
+    max_guests: 6,
+    lodging_provided: true,
+    lodging: '1 cabin',
+    parking: true
+)
+
+ar11 = Area.create!(
+    spot_id: 11, 
+    num_sites: 1,
+    max_guests: 12,
+    lodging_provided: true,
+    lodging: '6 teepees',
+    parking: true
+)
+
+ar12 = Area.create!(
+    spot_id: 12, 
+    num_sites: 1,
+    max_guests: 5,
+    lodging_provided: true,
+    lodging: '1 cabin',
+    parking: true
+)
+
 #ESSENTIALS
 es1 = Essential.create!(
     spot_id: 1,
@@ -351,6 +508,48 @@ es5 = Essential.create!(
 
 es6 = Essential.create!(
     spot_id: 6, 
+    campfires: true, 
+    toilet: true,
+    pets: true
+)
+
+es7 = Essential.create!(
+    spot_id: 7,      
+    campfires: false, 
+    toilet: true,
+    pets: false
+)
+
+es8 = Essential.create!(
+    spot_id: 8,      
+    campfires: false, 
+    toilet: true,
+    pets: false
+)
+
+es9 = Essential.create!(
+    spot_id: 9,      
+    campfires: true, 
+    toilet: true,
+    pets: true
+)
+
+es10 = Essential.create!(
+    spot_id: 10,      
+    campfires: true, 
+    toilet: true,
+    pets: true
+)
+
+es11 = Essential.create!(
+    spot_id: 11,      
+    campfires: true, 
+    toilet: true,
+    pets: true
+)
+
+es12 = Essential.create!(
+    spot_id: 12,      
     campfires: true, 
     toilet: true,
     pets: true
@@ -411,6 +610,60 @@ am6 = Amenity.create!(
     bins: true    
 )
 
+am7 = Amenity.create!(
+    spot_id: 7,
+    potable_water: true,
+    kitchen: true,
+    showers: true,
+    wifi: false,
+    bins: true
+)
+
+am8 = Amenity.create!(
+    spot_id: 8,
+    potable_water: true,
+    kitchen: true,
+    showers: true,
+    wifi: true,
+    bins: true
+)
+
+am9 = Amenity.create!(
+    spot_id: 9,
+    potable_water: true,
+    kitchen: false,
+    showers: true,
+    wifi: true,
+    bins: true
+)
+
+am10 = Amenity.create!(
+    spot_id: 10,
+    potable_water: true,
+    kitchen: true,
+    showers: true,
+    wifi: true,
+    bins: true
+)
+
+am11 = Amenity.create!(
+    spot_id: 11,
+    potable_water: true,
+    kitchen: false,
+    showers: true,
+    wifi: false,
+    bins: true
+)
+
+am12 = Amenity.create!(
+    spot_id: 12,
+    potable_water: true,
+    kitchen: true,
+    showers: true,
+    wifi: true,
+    bins: true
+)
+
 #DETAILS
 de1 = Detail.create!(
     spot_id: 1,
@@ -466,6 +719,60 @@ de6 = Detail.create!(
     min_nights: 1
 )
 
+de7 = Detail.create!(
+    spot_id: 7, 
+    checkin_time: 'After 10AM',
+    checkout_time: 'Before 3PM',
+    cancellation_policy: 'Super Strict',
+    on_arrival: 'Go straight to camp',
+    min_nights: 1
+)
+
+de8 = Detail.create!(
+    spot_id: 8, 
+    checkin_time: 'After 11AM',
+    checkout_time: 'Before 2PM',
+    cancellation_policy: 'Flexible',
+    on_arrival: 'Meet and greet',
+    min_nights: 1
+)
+
+de9 = Detail.create!(
+    spot_id: 9, 
+    checkin_time: 'After 4PM',
+    checkout_time: 'Before 1PM',
+    cancellation_policy: 'Flexible',
+    on_arrival: 'Meet and greet',
+    min_nights: 1
+)
+
+de10 = Detail.create!(
+    spot_id: 10, 
+    checkin_time: 'After 12PM',
+    checkout_time: 'Before 1PM',
+    cancellation_policy: 'Moderate',
+    on_arrival: 'Meet and greet',
+    min_nights: 1
+)
+
+de11 = Detail.create!(
+    spot_id: 11, 
+    checkin_time: 'After 3PM',
+    checkout_time: 'Before 2PM',
+    cancellation_policy: 'Strict',
+    on_arrival: 'Meet and greet',
+    min_nights: 1
+)
+
+de12 = Detail.create!(
+    spot_id: 12, 
+    checkin_time: 'After 5PM',
+    checkout_time: 'Before 11AM',
+    cancellation_policy: 'Moderate',
+    on_arrival: 'Meet and greet',
+    min_nights: 1
+)
+
 #REVIEWS
 re1 = Review.create!(
     author_id: 7,
@@ -485,7 +792,6 @@ re3 = Review.create!(
     spot_id: 6,
     body: 'A great place to unwind and socialize. We hit it off with the other guests, who invited us to join their bonfire on the first night.' 
 ) 
-
 
 re4 = Review.create!(
     author_id: 14,
@@ -513,6 +819,39 @@ re7 = Review.create!(
     spot_id: 5,
     title: 'Step into the past',
     body: 'We are grateful to Mai for hosting us and teaching us how to make tteok, steamed rice cakes. Seoul is a delightful city of dichotomies, of old and new, modern and traditional, polished and au naturel. Uri Hanok has easy access to public transportation and landmarks. Do be respecful and mindful that the village is not just an attraction. Bukchon Hanok Village gets a lot of foot traffic so residents are not crazy about their neighborhood being overrun with tourists.'
+)
+
+re8 = Review.create!(
+    author_id: 2,
+    spot_id: 7,
+    title: 'Stunning natural beauty',
+    body: 'You have to visit to believe it. If you\'re reasonably fit, you can do this without a guide. The trail is well-marked.'
+)
+
+re9 = Review.create!(
+    author_id: 5,
+    spot_id: 8,
+    title: 'Picturesque',
+    body: 'Plenty of things to do here. The entire area is vibrant and colorful, buzzing with energy. Boats are easily accessible to get from one part of the lake to the next.'
+)
+
+re10 = Review.create!(
+    author_id: 11,
+    spot_id: 9,
+    body: 'This was our first time taking our pup camping so we were a little nervous. This ended up being the perfect spot for us. Anthony and Jessica were wonderful hosts. The campsite itself is great, beautiful scenery and great amenities with very convenient bathroom and hot showers. The shower offers a view of rolling golden hills. At night we watched the show of the stars.'
+)
+
+re11 = Review.create!(
+    author_id: 20,
+    spot_id: 10,
+    body: 'The cabin was stocked with everything we might need and even provided teepees. The sunset hues of this area are really something.'
+)
+
+re12 = Review.create!(
+    author_id: 17,
+    spot_id: 12,
+    title: 'Gorgeous',
+    body: 'Breathtaking views to wake up to. Very convenient if you are driving to Yellowstone or the Tetons from east of Cody.'
 )
 
 
