@@ -22,33 +22,43 @@
     height: 23px;
 }
 
-.about-us-and-slogan {
+.social-and-slogan {
     display: flex;
     justify-content: space-between;
     margin: 34px 0px;
 }
 
-.footer .about-us {
+.footer .social {
     width: 30%;
+}
+
+.footer .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .links i {
+    font-size: 22px;
 }
 
 .footer .slogan {
     width: 60%;
 }
 
-.about-us-and-slogan h2 {
+.social-and-slogan h2 {
     font-size: 14.5px;
     margin-bottom: 24px;
     line-height: 1.35;
 }
 
-.about-us-and-slogan p {
+.social-and-slogan p {
     color: #757575;
     font-weight: 300;
     font-size: 14.5px;
 } 
 
-.about-us { 
+.social { 
     line-height: 2.5;
 }
 

@@ -10,10 +10,21 @@ const Footer = () => {
                         <img src={window.pacacamp} alt="PacaCamp"/>
                     </div>
 
-                    <div className="about-us-and-slogan">
-                        <div className="about-us">
-                            <h2>About us</h2>
-                            <p> Github, LinkedIn links
+                    <div className="social-and-slogan">
+                        <div className="social">
+                            <h2>About</h2>
+                            <p className="links">
+                                <a id="github" href="https://github.com/aimyaa/PacaCamp" target="_blank">
+                                    <i class="fab fa-github"></i>&nbsp;Github
+                                </a>
+
+                                <a id="linkedin" href="" target="_blank">
+                                    <i class="fab fa-linkedin"></i>&nbsp;LinkedIn
+                                </a>
+
+                                <a id="angellist" href="" target="_blank">
+                                    <i class="fab fa-angellist"></i>&nbsp;AngelList
+                                </a>
                             </p>
                         </div>
 
