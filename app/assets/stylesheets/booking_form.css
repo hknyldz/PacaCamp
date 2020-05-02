@@ -52,7 +52,7 @@
 .form-fields .label {
     font-size: 15.5px;
     padding-bottom: 8.5px;
-    font-weight: 600;
+    font-weight: normal;
 }
 
 .form-fields input {
@@ -61,18 +61,10 @@
 
 .form-fields input::placeholder {
     font-size: 15.5px;
-    color: #757575;
-}
-/* 
-.DayPicker-Day--today {
-    color: #333333 !important;
-    font-weight: 500 !important; 
+    color: #333333;
+    font-weight: 300;
 }
 
-.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
-    background-color: #40d9ac !important;
-    
-} */
 
 .booking-form .total-calc {
     padding: 13px 10px;
@@ -96,6 +88,10 @@
 
 .form-fields .guests {
     width: 28%;
+}
+
+.booking-form .num-guests {
+    font-weight: 400;
 }
 
 .booking-form .up-down-btn {

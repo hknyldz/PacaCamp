@@ -122,11 +122,11 @@ class BookingForm extends React.Component {
                         <div className="label">Guests</div>
                         <div className="book-guests">
                             <button className="up-down-btn" onClick={this.handleGuests('down')}><i className="fas fa-minus"></i></button>
-                            &nbsp;
+                            &nbsp;&nbsp;
                             <span className="num-guests">
                             {this.state.num_guests}
                             </span>
-                            &nbsp;
+                            &nbsp;&nbsp;
                             <button className="up-down-btn" onClick={this.handleGuests('up')}><i className="fas fa-plus"></i></button>
                         </div>
                     </div>
