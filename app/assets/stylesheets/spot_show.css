@@ -85,10 +85,12 @@
 
 .host-description .host {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items:  center; 
-    height: 90px;
     width: 30%;
+    min-width: 90px;
+    height: 90px;
 }
 
 .host .credit {
@@ -102,6 +104,7 @@
 
 .host-description {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 25px;
     margin-bottom: 35px;
@@ -121,7 +124,6 @@
 .spot-show .features {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
 .spot-show .spacing {
@@ -179,10 +181,12 @@
     padding: 30px 0px;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .spot-show .details .heading {
     width: 17%;
+    min-width: 61px;
     vertical-align: bottom;
     font-weight: 500;
     line-height: 2;
@@ -199,6 +203,7 @@
 
 .spot-show .content > ul {
     width: 50%;
+    min-width: 148px;
 }
 
 .spot-show .content > .left {
