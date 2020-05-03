@@ -6,6 +6,7 @@ import Area from './area';
 import Essential from './essential';
 import Amenity from './amenity';
 import Detail from './detail';
+import SpotMap from './spot_map';
 
 
 class SpotShow extends React.Component {
@@ -162,6 +163,8 @@ class SpotShow extends React.Component {
 
                     </div>
                 </div>
+
+                <SpotMap spot={this.props.spot} />
 
             </div>
         );
