@@ -143,6 +143,10 @@
     font-weight: 300;
 }
 
+.spot-show .features span {
+    color: #757575;
+}
+
 .spot-show .features h2 {
     font-weight: 400;
     font-size: 19px;
