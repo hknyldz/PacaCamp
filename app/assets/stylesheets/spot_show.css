@@ -127,13 +127,13 @@
 .spot-show .spacing {
     padding-right: 20px;
     padding-bottom: 20px;
-    width: 33%;
+    width: 33.3333%;
 }
 
 .area, .essential, .amenity {
     padding: 15px;
     border: 1px solid  #EBEBEB;
-    min-width: 220px;
+    min-width: 200px;
     height: 340px;
 }
 
