@@ -124,12 +124,16 @@
     margin-bottom: 20px;
 }
 
-.spot-show .features > div {
+.spot-show .spacing {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 33%;
+}
+
+.area, .essential, .amenity {
     padding: 15px;
     border: 1px solid  #EBEBEB;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 220px;
+    min-width: 220px;
     height: 340px;
 }
 

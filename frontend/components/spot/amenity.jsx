@@ -56,13 +56,15 @@ const Amenity = (props) => {
     );
 
     return (
-        <div className="amenity">
-            <h2>Amenities</h2>
-            {amOne}
-            {amTwo}
-            {amThree}
-            {amFour}
-            {amFive}
+        <div className="spacing">
+            <div className="amenity">
+                <h2>Amenities</h2>
+                {amOne}
+                {amTwo}
+                {amThree}
+                {amFour}
+                {amFive}
+            </div>
         </div>
     );
 };

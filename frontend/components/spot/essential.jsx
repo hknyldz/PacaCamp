@@ -36,11 +36,13 @@ const Essential = (props) => {
     );
 
     return (
-        <div className="essential">
-            <h2>Essentials</h2>
-            {esOne}
-            {esTwo}
-            {esThree}
+        <div className="spacing">
+            <div className="essential">
+                <h2>Essentials</h2>
+                {esOne}
+                {esTwo}
+                {esThree}
+            </div>
         </div>
     );
     

@@ -66,11 +66,13 @@ const Area = (props) => {
     );
 
     return (
-        <div className="area">
-            {arOne}
-            {arTwo}
-            {arThree}
-            {arFour}
+        <div className="spacing">
+            <div className="area">
+                {arOne}
+                {arTwo}
+                {arThree}
+                {arFour}
+            </div>
         </div>
     );
 };
