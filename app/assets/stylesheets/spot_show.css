@@ -128,12 +128,12 @@
     padding-right: 20px;
     padding-bottom: 20px;
     width: 33.3333%;
+    min-width: 220px;
 }
 
 .area, .essential, .amenity {
     padding: 15px;
     border: 1px solid  #EBEBEB;
-    min-width: 200px;
     height: 340px;
 }
 
@@ -199,6 +199,10 @@
 
 .spot-show .content > ul {
     width: 50%;
+}
+
+.spot-show .content > .left {
+    padding-right: 10px;
 }
 
 .details .content li {
