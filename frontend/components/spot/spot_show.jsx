@@ -143,9 +143,7 @@ class SpotShow extends React.Component {
 
                         <section className="features">
                             <Area area={this.props.spot.area}/>
-                            
                             <Essential essential={this.props.spot.essential}/>
-                            
                             <Amenity amenity={this.props.spot.amenity}/>
                         </section>
                         

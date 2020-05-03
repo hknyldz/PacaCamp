@@ -12,7 +12,7 @@ const Detail = (props) => {
 
     return (
         <section className="details">
-            <div className="heading">Details</div>
+            <h2 className="heading">Details</h2>
 
             <div className="content">
                 <ul className="left">

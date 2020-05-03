@@ -129,8 +129,13 @@
     border: 1px solid  #EBEBEB;
     margin-right: 20px;
     margin-bottom: 20px;
-    width: 33%;
+    width: 220px;
+    height: 340px;
 }
+
+.spot-show .features > .amenity {
+    margin-right: 0px;
+} 
 
 .spot-show .features img {
     width: 27px;
@@ -169,12 +174,14 @@
     border-bottom: 1px solid  #EBEBEB;
     padding: 30px 0px;
     display: flex;
-    justify-content: flext-start;
+    justify-content: flex-start;
 }
 
 .spot-show .details .heading {
     width: 17%;
     vertical-align: bottom;
+    font-weight: 500;
+    line-height: 2;
 }
 
 .spot-show .details .content {
@@ -190,18 +197,14 @@
     width: 50%;
 }
 
-.spot-show .details .heading {
-    font-weight: 600;
+.details .content li {
+    font-size: 14.5px;
+    font-weight: normal;
 }
 
 .details .content span {
-    font-weight: 600;
+    font-weight: bold;
 }
-
-.details .content li {
-    font-size: 14.5x;
-}
-
 .spot-show .activities {
     margin-top: 30px;
     margin-bottom: 30px;
