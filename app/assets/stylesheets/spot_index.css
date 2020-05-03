@@ -2,12 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* width: 79%; */
     margin: 0 auto;
 }
 
 .spot-index-item {
     width: 33.33333%;
+    min-width: 340px;
     padding: 0px 10px;
 }
 
