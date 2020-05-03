@@ -43,7 +43,7 @@ class SpotMap extends React.Component {
                                 <dd>{this.props.spot.country}</dd>
                             </dl>
 
-                            <dl class="dl-horizontal">
+                            <dl className="dl-horizontal">
                                 <dt>${this.props.spot.price}/night</dt>
                                 <dd>{this.props.spot.area.num_sites} Site(s)</dd>
                             </dl>
