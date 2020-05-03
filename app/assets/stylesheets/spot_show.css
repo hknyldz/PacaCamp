@@ -84,7 +84,6 @@
 
 .host-description .host {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items:  center; 
     width: 30%;
@@ -279,6 +278,7 @@ button.gm-fullscreen-control {
 
 .map-container {
     position: relative;
+    margin-top: 45px;
 }
 
 .tile-container {
