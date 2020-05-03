@@ -211,15 +211,17 @@
 }
 
 .spot-show .activity > p {
-    line-height: 1.8;
+    width: 100px;
+    text-align: center;
+    line-height: 1.2;
     letter-spacing: 0.5px;
-    font-size: 20px;
-    font-weight: 500px;
+    font-size: 15px;
+    font-weight: 500;
 
 }
 
 .spot-show .activities > h2 {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .spot-show .activities > p {
@@ -230,19 +232,21 @@
 
 .spot-show .activity img {
     width: 100px;
+    border: 1px solid  #EBEBEB;
 }
 
 .spot-show .activities .flex {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .spot-show .activities .activity {
-    padding: 15px;
-    border: 1px solid  #EBEBEB;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 33%;
+    margin: 0 10px 20px 10px;
+    width: 100px;
+    height: 137px;
+    line-height: 1;
+    float: left;
 }
 
 
