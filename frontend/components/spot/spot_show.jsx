@@ -2,6 +2,10 @@ import React from 'react';
 import HostDescription from './host_description';
 import ReviewIndexContainer from '../review/review_index_container';
 import BookingFormContainer from '../booking/booking_form_container';
+import Area from './area';
+import Essential from './essential';
+import Amenity from './amenity';
+import Detail from './detail';
 
 
 class SpotShow extends React.Component {
@@ -16,162 +20,6 @@ class SpotShow extends React.Component {
 
         if (!this.props.spot) return null;
 
-       
-        const { 
-            area: { num_sites, max_guests, lodging_provided, lodging, parking }, 
-            essential: { campfires, toilet, pets }, 
-            amenity: { potable_water, kitchen, showers, wifi, bins}, 
-            detail: { checkin_time, checkout_time, cancellation_policy, on_arrival, min_nights} 
-        } = this.props.spot;
-
-
-        //AREA
-        let arOne, arTwo, arThree, arFour;
-        if (lodging_provided) {
-            arOne = (
-                <>
-                    <h2>Lodging provided</h2>
-                    <div className="list-icon">
-                        <div className="icon-image-container">
-                            <img src={window.lodging} alt="lodging" />&nbsp;
-                        </div>
-                
-                        <div>{lodging}</div>
-                    </div>
-                </>
-
-            )
-        } else {
-            arOne = (
-                <>
-                    <h2>Campsite area</h2>
-                    <div className="list-icon">
-                        <div className="icon-image-container">
-                            <img src={window.tent} alt="tent" />
-                            <img src={window.rv} alt="rv" />&nbsp;
-                        </div>
-
-                        <div>Bring your own tents, vans, trailers, RVs</div>
-                    </div>   
-                </>
-            )
-        };
-
-        arTwo = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={window.sites} alt="sites" />&nbsp;
-                </div>
-            
-                <div>{num_sites}&nbsp;{num_sites === 1 ? "site" : "sites"} </div>
-            </div>
-        );
-
-        arThree = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={window.guests} alt="guests" />&nbsp;
-                </div>
-            
-                <div>Up to&nbsp;{max_guests / num_sites}&nbsp;guests per site</div>
-            </div>
-        );
-
-        arFour = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={parking ? window.parking : window.walk} alt="park" />&nbsp;
-                </div>
-            
-                <div>{parking ? "Park at listing" : "Walk to listing"}</div>
-            </div>
-        );
-
-        //ESSENTIAL
-        let esOne, esTwo, esThree;
-        esOne = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={campfires ? window.campfire : window.campfire_n} alt="campfire" />&nbsp;
-                </div>
-
-                <div>{campfires ? "Campfires allowed" : "No campfires"}</div>
-            </div>
-        );
-
-        esTwo = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={toilet ? window.toilet : window.toilet_n} alt="toilet" />&nbsp;
-                </div>
-
-                <div>{toilet ? "Toilet available" : "No toilet"}</div>
-            </div>
-        );
-
-        esThree = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={pets ? window.pets : window.pets_n} alt="pets" />&nbsp;
-                </div>
-
-                <div>{pets ? "Pets allowed" : "No pets"}</div>
-            </div>
-        );
-
-        //AMENITY
-        let amOne, amTwo, amThree, amFour, amFive;
-        amOne = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={potable_water ? window.water : window.water_n} alt="water" />&nbsp;
-                </div>
-
-                <div>{potable_water ? "Potable water available" : "No potable water"}</div>
-            </div>
-        );
-
-        amTwo = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={kitchen ? window.kitchen : window.kitchen_n} alt="kitchen" />&nbsp;
-                </div>
-
-                <div>{kitchen ? "Kitchen available" : "No kitchen"}</div>
-            </div>
-        );
-
-        amThree = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={showers ? window.shower : window.shower_n} alt="shower" />&nbsp;
-                </div>
-
-                <div>{showers ? "Showers available" : "No showers"}</div>
-            </div>
-        );
-
-        amFour = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={wifi ? window.wifi : window.wifi_n} alt="wifi" />&nbsp;
-                </div>
-
-                <div>{wifi ? "Wifi available" : "No wifi"}</div>
-            </div>
-        );
-
-        amFive = (
-            <div className="list-icon">
-                <div className="icon-image-container">
-                    <img src={bins ? window.bins : window.bins_n} alt="bins" />&nbsp;
-                </div>
-
-                <div>{bins ? "Bins available" : "No bins"}</div>
-            </div>
-        );
-
-        //ACTIVITIES
         const activities = this.props.spot.activities.map((act, i) => {
             if (act === 'biking') return (
                 <div className="activity" key={i}>
@@ -278,7 +126,7 @@ class SpotShow extends React.Component {
                     
                     <div className="spot-show-body">
                         <section className="header-container">
-                            <p className="country-location">{this.props.spot.country} &nbsp; <span className="arrow"><i class="fas fa-angle-right"></i></span> &nbsp; {this.props.spot.location} &nbsp; <span className="arrow"><i class="fas fa-angle-right"></i></span></p>
+                            <p className="country-location">{this.props.spot.country} &nbsp; <span className="arrow"><i className="fas fa-angle-right"></i></span> &nbsp; {this.props.spot.location} &nbsp; <span className="arrow"><i className="fas fa-angle-right"></i></span></p>
 
                             <h1 className="name">{this.props.spot.name}&nbsp;<span className="check"></span></h1>
                             
@@ -294,47 +142,15 @@ class SpotShow extends React.Component {
                         </section>
 
                         <section className="features">
-                            <div className="area">
-                                {arOne}
-                                {arTwo}
-                                {arThree}
-                                {arFour}
-                            </div>
+                            <Area area={this.props.spot.area}/>
                             
-                            <div className="essential">
-                                <h2>Essentials</h2>
-                                {esOne}
-                                {esTwo}
-                                {esThree}
-                            </div>
+                            <Essential essential={this.props.spot.essential}/>
                             
-                            <div className="amenity">
-                                <h2>Amenities</h2>
-                                {amOne}
-                                {amTwo}
-                                {amThree}
-                                {amFour}
-                                {amFive}
-                            </div>
+                            <Amenity amenity={this.props.spot.amenity}/>
                         </section>
                         
 
-                        <section className="details">
-                            <div className="heading">Details</div>
-
-                            <div className="content">
-                                <ul className="left">
-                                    <li><span>Check in:</span> &nbsp;{checkin_time}</li>
-                                    <li><span>Check out:</span> &nbsp;{checkout_time}</li>
-                                    <li><span>Cancellation policy:</span> &nbsp;{cancellation_policy}</li>
-                                </ul>
-
-                                <ul className="right">
-                                    <li><span>On arrival:&nbsp;</span>{on_arrival}</li>
-                                    <li><span>Minimum nights:&nbsp;</span>{min_nights}</li>
-                                </ul>
-                            </div>
-                        </section>
+                        <Detail detail={this.props.spot.detail}/>
 
                         <section className="activities">
                             <h2>Activities</h2>
