@@ -42,6 +42,10 @@
     font-size: 22px;
 }
 
+.footer .links i:hover {
+    transform: scale(1.3);
+}
+
 .footer .slogan {
     width: 60%;
 }
