@@ -15,15 +15,21 @@ const Footer = () => {
                             <h2>About</h2>
                             <p className="links">
                                 <a id="github" href="https://github.com/aimyaa/PacaCamp" target="_blank">
-                                    <i className="fab fa-github"></i>&nbsp;Github
+                                    <i className="fab fa-github"></i>
+                                    &nbsp;
+                                    <span>Github</span>
                                 </a>
 
                                 <a id="linkedin" href="https://www.linkedin.com/in/aimy-yu-11a5681a9/" target="_blank">
-                                    <i className="fab fa-linkedin"></i>&nbsp;LinkedIn
+                                    <i className="fab fa-linkedin"></i>
+                                    &nbsp;
+                                    <span>LinkedIn</span>
                                 </a>
 
                                 <a id="angellist" href="https://angel.co/u/aimy-yu" target="_blank">
-                                    <i className="fab fa-angellist"></i>&nbsp;AngelList
+                                    <i className="fab fa-angellist"></i>
+                                    &nbsp;
+                                    <span>AngelList</span>
                                 </a>
                             </p>
                         </div>
