@@ -36,6 +36,7 @@
 
 .guest-menu a:hover {
     border-bottom: 3px solid #40d9ac;
+    cursor: pointer;
 }
 
 #signup-link {
