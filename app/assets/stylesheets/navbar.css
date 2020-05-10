@@ -29,13 +29,14 @@
 
 .guest-menu a {
     padding: 5px;
+    padding-bottom: 2px;
     margin: 0px 5px;
     font-size: 15px;
     font-weight: 300;
 }
 
 .guest-menu a:hover {
-    border-bottom: 3px solid #40d9ac;
+    border-bottom: 2px solid #40d9ac;
     cursor: pointer;
 }
 
@@ -51,13 +52,14 @@
 
 .navlinks a {
     padding: 5px;
+    padding-bottom: 2px;
     margin: 0px 5px;
     font-size: 15px;
     font-weight: 300;
 }
 
 .navlinks a:hover {
-    border-bottom: 3px solid #40d9ac;
+    border-bottom: 2px solid #40d9ac;
 }
 
 .navbar .dropdown-container {
