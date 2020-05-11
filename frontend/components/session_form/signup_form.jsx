@@ -38,7 +38,10 @@ class SignupForm extends React.Component {
             password: ''
         });
         this.props.signup(formUser).then(() => {
-            this.props.history.push('/');
+            if (this.props.location.pathname.includes('/signup')) {
+                this.props.history.push('/');
+            }
+
             this.props.closeModal();
         });
     }

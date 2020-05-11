@@ -30,15 +30,16 @@ class LoginForm extends React.Component {
 
 
     handleSubmit(e) {
-        // console.log(this.props.match.path);
         e.preventDefault();
         const formUser = Object.assign({}, this.state);
         this.props.login(formUser).then(() => {
-            this.props.history.push('/');
+            if (this.props.location.pathname.includes('/login')) {
+                this.props.history.push('/');
+            }
+
             this.props.closeModal();
         });
-            // if ((this.props.match.path === '/login') || (this.props.match.path === '/signup'))
-            // {this.props.history.push('/')}
+
         this.setState({
             email: '',
             password: ''
@@ -47,7 +48,11 @@ class LoginForm extends React.Component {
 
     handleClick(e) {
         const demoUser = {email: 'happyalpaca@aa.io', password: 'humming'};
-        this.props.login(demoUser).then(() => this.props.history.push('/'));
+        this.props.login(demoUser).then(() => {
+            if (this.props.location.pathname.includes('/login')) {
+                this.props.history.push('/');
+            }
+        });
         this.props.closeModal();
         this.setState({
             email: '',
