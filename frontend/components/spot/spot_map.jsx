@@ -34,7 +34,7 @@ class SpotMap extends React.Component {
                 <div className="tile-container">
                     <div className="container">
                         <div className="tile">
-                            <dl class="dl-horizontal">
+                            <dl className="dl-horizontal">
                                 <dt>Property</dt>
                                 <dd>{this.props.spot.name}</dd>
                                 <dt>Location</dt>
