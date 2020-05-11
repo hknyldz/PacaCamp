@@ -85,7 +85,7 @@
     border-color: transparent;
     border-radius: 2px;
     text-align: left;
-    width: 97%; 
+    width: 100%; 
 }
 
 .user-edit-form .errors li {
