@@ -7,7 +7,6 @@ class BookingForm extends React.Component {
     constructor(props) {
         super(props); 
         this.state = {
-            guest_id: this.props.currentUserId,
             spot_id: this.props.match.params.spotId,
             num_guests: 1,
             checkin_date: undefined,
@@ -36,7 +35,7 @@ class BookingForm extends React.Component {
             total = 0;
         }
 
-        const booking = Object.assign({}, this.state, {total})
+        const booking = Object.assign({}, this.state, { total, guest_id: this.props.currentUserId })
 
         if (!this.props.currentUserId) {
             this.props.openModal('login');
