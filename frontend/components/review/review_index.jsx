@@ -7,6 +7,8 @@ import CreateReviewFormContainer from './create_review_form_container';
 class ReviewIndex extends React.Component {
     componentDidMount() {
         this.props.fetchReviews(this.props.match.params.spotId);
+        window.scrollTo(0, 0);
+        
     }
 
     render() {
