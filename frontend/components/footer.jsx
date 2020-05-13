@@ -14,6 +14,12 @@ const Footer = () => {
                         <div className="social">
                             <h2>About</h2>
                             <p className="links">
+                                <a id="portfolio" href="https://aimyaa.github.io/" target="_blank">
+                                    <i class="fas fa-user"></i>
+                                    &nbsp;
+                                    <span>Portfolio</span>
+                                </a>
+
                                 <a id="github" href="https://github.com/aimyaa" target="_blank">
                                     <i className="fab fa-github"></i>
                                     &nbsp;
