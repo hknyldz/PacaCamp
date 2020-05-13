@@ -13,7 +13,7 @@ const receiveSpot = (spot) => ({
     spot
 });
 
-export const fetchSpots = () => dispatch => spotAPIUtil.fetchSpots().then((spots) => dispatch(receiveSpots(spots)));
+export const fetchSpots = (filters) => dispatch => spotAPIUtil.fetchSpots(filters).then((spots) => dispatch(receiveSpots(spots)));
 
 export const fetchSpot = (spotId) => dispatch => spotAPIUtil.fetchSpot(spotId).then((spot) => dispatch(receiveSpot(spot)));
 
