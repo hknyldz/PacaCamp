@@ -55,6 +55,17 @@ class Spot < ApplicationRecord
 
     # has_many_attached :photos
 
-
+    def in_bounds(bounds)
+        top = bounds["northEast"]["lat"].to_f
+        bottom = bounds["southWest"]["lat"].to_f
+        right = bounds["northEast"]["lng"].to_f
+        left = bounds["southWest"]["lng"].to_f
+        
+        if (self.latitude < top && self.latitude > bottom) && (self.longitude < right && self.longitude > left)
+            return true
+        else 
+            return false
+        end 
+    end
     
 end
