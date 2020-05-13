@@ -14,7 +14,7 @@ const Footer = () => {
                         <div className="social">
                             <h2>About</h2>
                             <p className="links">
-                                <a id="github" href="https://github.com/aimyaa/PacaCamp" target="_blank">
+                                <a id="github" href="https://github.com/aimyaa" target="_blank">
                                     <i className="fab fa-github"></i>
                                     &nbsp;
                                     <span>Github</span>

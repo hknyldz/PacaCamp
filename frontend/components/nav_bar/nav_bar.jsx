@@ -22,7 +22,7 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink, location, match })
 
             <div className="user-menu">
                 <div className="navlinks">
-                    <a id="github" href="https://github.com/aimyaa/PacaCamp" target="_blank">
+                    <a id="github" href="https://github.com/aimyaa" target="_blank">
                         <i className="fab fa-github"></i>&nbsp;Github
                     </a>
 
@@ -60,7 +60,7 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink, location, match })
             {navSearchBar}
 
             <div className="guest-menu">
-                <a id="github" href="https://github.com/aimyaa/PacaCamp" target="_blank">
+                <a id="github" href="https://github.com/aimyaa" target="_blank">
                     <i className="fab fa-github"></i>&nbsp;Github
                 </a>
 
