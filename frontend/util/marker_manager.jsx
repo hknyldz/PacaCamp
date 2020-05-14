@@ -72,6 +72,14 @@ class MarkerManager {
             new google.maps.Size(50, 50)
         );
 
+        const hoverIcon = new google.maps.MarkerImage(
+            'https://s3.amazonaws.com/pacacamp-seeds/hovermarker.png',
+            null, /* size is determined at runtime */
+            null, /* origin is 0,0 */
+            null, /* anchor is bottom center of the scaled image */
+            new google.maps.Size(50, 50)
+        );
+
         const marker = new google.maps.Marker({
             position,
             icon, 
@@ -85,10 +93,12 @@ class MarkerManager {
         marker.addListener('click', () => this.handleClick(spot));
 
         marker.addListener('mouseover', () => {
+            marker.setIcon(hoverIcon);
             infoWindow.open(this.map, marker);
         });
 
         marker.addListener('mouseout', () => {
+            marker.setIcon(icon);
             infoWindow.close();
         });
     }
