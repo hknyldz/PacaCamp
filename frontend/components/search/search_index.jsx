@@ -10,10 +10,12 @@ class SearchIndex extends React.Component {
     render() {
         if (!this.props.spots.length) return null; 
 
+        const filteredSpots = this.props.spots.filter( spot => spot.country === 'United States');
+
         return (
             <div className="search-index">
                 <div className="search-index-items">
-                    {this.props.spots.map((spot) =>
+                    {filteredSpots.map((spot) =>
                         <SearchIndexItem
                             key={spot.id}
                             spot={spot}
