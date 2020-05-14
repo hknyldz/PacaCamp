@@ -8,6 +8,8 @@ class SearchIndex extends React.Component {
     }
 
     render() {
+        if (!this.props.spots.length) return null; 
+
         return (
             <div className="search-index">
                 <div className="search-index-items">
@@ -19,7 +21,7 @@ class SearchIndex extends React.Component {
                     )}
                 </div>
 
-                <SearchMap />
+                <SearchMap spots={this.props.spots}/>
             </div>
         )
     }
