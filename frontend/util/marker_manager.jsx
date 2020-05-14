@@ -38,7 +38,7 @@ class MarkerManager {
                     </div>
                     
                     <div className="location">
-                        in {this.props.spot.country} &nbsp; <span className="arrow"><i className="fas fa-angle-right"></i></span> &nbsp; {this.props.spot.location}
+                        in {spot.country} &nbsp; <span className="arrow"><i className="fas fa-angle-right"></i></span> &nbsp; {spot.location}
                     </div>
 
                     
@@ -63,10 +63,14 @@ class MarkerManager {
         });
 
         const position = new google.maps.LatLng(spot.latitude, spot.longitude);
-        const icon = { 
-            url: 'https://s3.amazonaws.com/pacacamp-seeds/marker.png', 
-            size: new google.maps.Size(50, 50) // may not need  this
-        };
+
+        const icon = new google.maps.MarkerImage(
+            'https://s3.amazonaws.com/pacacamp-seeds/marker.png',
+            null, /* size is determined at runtime */
+            null, /* origin is 0,0 */
+            null, /* anchor is bottom center of the scaled image */
+            new google.maps.Size(50, 50)
+        );
 
         const marker = new google.maps.Marker({
             position,
@@ -76,8 +80,9 @@ class MarkerManager {
             title: spot.name
         });
 
-        marker.addListener('click', () => this.handleClick(spot));
         this.markers[spot.id] = marker;
+        
+        marker.addListener('click', () => this.handleClick(spot));
 
         marker.addListener('mouseover', () => {
             infoWindow.open(this.map, marker);
