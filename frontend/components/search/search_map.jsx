@@ -1,6 +1,7 @@
 import React from 'react';
-import MarkerManager from '../../util/marker_manager';
+import ReactDOMServer from 'react-dom/server';
 import { withRouter } from "react-router-dom";
+import MarkerManager from '../../util/marker_manager';
 
 class SearchMap extends React.Component {
     componentDidMount() {
@@ -22,14 +23,31 @@ class SearchMap extends React.Component {
 
         this.map = new google.maps.Map(this.mapNode, mapOptions);
 
+        // center marker
         const centerMarker = new google.maps.Marker({
             position: center
         })
         centerMarker.setMap(this.map);
 
+        const centerMarkerWindowContent = <div className="center-info-window">Your search location</div>;
+
+        const centerContent = ReactDOMServer.renderToString(centerMarkerWindowContent);
+
+        const centerInfoWindow = new google.maps.InfoWindow({
+            content: centerContent
+        });
+
+        centerMarker.addListener('mouseover', () => {
+            centerInfoWindow.open(this.map, centerMarker);
+        });
+
+        centerMarker.addListener('mouseout', () => {
+            centerInfoWindow.close();
+        });
+
+        // spot markers
         this.markerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
         this.markerManager.updateMarkers(this.props.spots);
-        console.log(this.props.spots);
     }
 
     render() {
