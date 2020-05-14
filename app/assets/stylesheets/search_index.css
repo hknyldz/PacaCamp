@@ -1,0 +1,103 @@
+.search-index {
+    position: relative;
+    top: 100px;
+    /* max-width: 1080px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-map {
+    width: 33%;
+    height: 500px;
+}
+
+.search-map .center-info-window {
+    color: #757575;
+}
+
+.search-map .info-window {
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+div.gm-style-iw.gm-style-iw-c {
+    max-width: 250px !important;
+    max-height: 392px !important;
+}
+
+div.gm-style-iw-d {
+    max-height: 374px !important;
+}
+
+/* .search-map .info-window::after {
+    width: 15px;
+    height: 100%;
+    background-size: 100%;
+    background-image: linear-gradient(to left, #fff, rgba(255,255,255,0));
+} */
+
+.search-map .info-window > div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.search-map .info-window img {
+    width: 62px;
+    height: 62px;
+    padding-right: 10px;
+    object-fit: cover;
+}
+
+.search-map .name, .search-map .location {
+    width: 148px;
+}
+
+.search-map .name {
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.search-map .spot-name {
+    font-weight: 600;
+    font-size: 13.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-map .check {
+    font-size: 15px;
+}
+
+.search-map .location {
+    color: #a8a7a7;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 9px;
+}
+
+.search-map .arrow {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.search-map .percentage {
+    color: #40d9ac;
+    font-weight: 500;
+}
+
+.search-map .thumb {
+    font-size: 12.5px;
+}
+
+.search-map .reviews {
+    font-weight: 100;
+    color: #757575;
+}
+
