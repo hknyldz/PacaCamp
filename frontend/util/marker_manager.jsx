@@ -27,7 +27,7 @@ class MarkerManager {
         const infoWindowContent = (
             <div className="info-window">
                 <div className="image-container">
-                    <img src={spot.photoUrls[0]} alt="cover photo" />
+                    <img src={spot.photoUrls[1]} alt="cover photo" />
                 </div>
 
                 <div className="spot-details">   
@@ -44,7 +44,7 @@ class MarkerManager {
                     
                     <div className="rating-reviews">
                         <span className="rating">
-                            <span><i id="thumbs-up-icon" className="fas fa-thumbs-up" aria-hidden="true"></i></span>
+                            <span className="thumb"><i id="thumbs-up-icon" className="fas fa-thumbs-up" aria-hidden="true"></i></span>
                             &nbsp;
                             <span className="percentage">{spot.rating}%</span>
                         </span>
