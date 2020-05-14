@@ -58,6 +58,7 @@ class MarkerManager {
         );
 
         const content = ReactDOMServer.renderToString(infoWindowContent);
+        
         const infoWindow = new google.maps.InfoWindow({
             content
         });
