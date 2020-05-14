@@ -15,7 +15,7 @@ const Footer = () => {
                             <h2>About</h2>
                             <p className="links">
                                 <a id="portfolio" href="https://aimyaa.github.io/" target="_blank">
-                                    <i class="fas fa-user"></i>
+                                    <i className="fas fa-user"></i>
                                     &nbsp;
                                     <span>Portfolio</span>
                                 </a>
