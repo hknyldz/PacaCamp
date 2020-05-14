@@ -53,8 +53,6 @@ class SpotMap extends React.Component {
             </div>
         );
     }
-        
-
 }
 
 
