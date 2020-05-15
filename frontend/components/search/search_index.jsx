@@ -5,6 +5,7 @@ import SearchMap from './search_map';
 class SearchIndex extends React.Component {
     componentDidMount() {
         this.props.fetchSpots();
+        window.scrollTo(0, 0);
     }
 
     render() {
