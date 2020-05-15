@@ -15,8 +15,8 @@
     width: 345px;
     background-color: white;
     padding: 22px 19px 8px 15px;
-    border: 2px solid #EBEBEB;
-    box-shadow: 0 0 10px #EBEBEB;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .login-modal > .session-form, .signup-modal > .session-form {
