@@ -1,0 +1,25 @@
+.navbar-search {
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    width: 300px;
+    height: 53px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-search > i {
+    font-size: 16px;
+}
+
+.navbar-search > input {
+    display: inline-block;
+    width: 244px;
+    height: 37px;
+}
+
+.navbar-search > input::placeholder {
+    color: #999999;
+    font-weight: 300;
+    font-size: 16px;
+}
