@@ -11,7 +11,6 @@ const msp = (state) => ({
 const mdp = (dispatch) => ({
     fetchReviews: (spotId) => dispatch(fetchReviews(spotId)),
     deleteReview: (reviewId) => dispatch(deleteReview(reviewId))
-    // updateReview: (review) => dispatch(updateReview(review))
 });
 
 
