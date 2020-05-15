@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-
 class CreateReviewForm extends React.Component {
     constructor(props) {
         super(props);
@@ -60,7 +59,6 @@ class CreateReviewForm extends React.Component {
                             value={this.state.body}
                         />
                     
-
                         <button type="submit">Post</button>
                     </form>
             </div>

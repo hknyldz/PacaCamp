@@ -141,13 +141,10 @@ class BookingForm extends React.Component {
                 </div>
 
                 {totalCalc}
-
                 
                 {errorsUl}
                 
-
                 <div className="btn-container"><button onClick={this.handleSubmit}>Instant book</button></div>
-
             </div>
         )
     }
