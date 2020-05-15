@@ -13,14 +13,20 @@
     background-color: #ffffff;;
 }
 
-.navbar .pacacamp-container {
-    vertical-align: center;
+.navbar .pacacamp-search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+/* .navbar .pacacamp-container {
+    vertical-align: center;
+} */
 
 .navbar .pacacamp-container a {
     font-size: 30px;
-    padding-left: 30px;
     font-weight: bold;
+    padding-right: 29px;
+    padding-left: 30px;
 }
 
 .navbar i {
