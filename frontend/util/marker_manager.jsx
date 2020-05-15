@@ -86,7 +86,7 @@ class MarkerManager {
             icon, 
             map: this.map,
             spotId: spot.id,
-            title: spot.name
+            // title: spot.name
         });
 
         this.markers[spot.id] = marker;
