@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchBar from './search/search_bar';
 import SpotIndexContainer from './spot/spot_index_container';
 
 class Splash extends React.Component {
@@ -22,6 +23,12 @@ class Splash extends React.Component {
                         </h2>
                     </div>
                 </div>
+
+                <div className="splash-search-container">
+                    <SearchBar />
+                </div>
+
+                <h2>Discover camping...</h2>
 
                 <SpotIndexContainer />
 

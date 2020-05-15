@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class SearchBar extends React.Component { 
     constructor(props) {
@@ -16,15 +16,19 @@ class SearchBar extends React.Component {
         let searchBar; 
         if (this.props.location.pathname === '/') {
             searchBar = (
-                <form className="splash-search" onSubmit={this.handleSubmit}>
-                    &nbsp;&nbsp;
-                    <i className="fas fa-search"></i>
-                    &nbsp;&nbsp;
-                    <input 
-                    type="search" 
-                    placeholder="Try United States"
-                    />
-                </form>
+                <div className="splash-search">
+                    <form onSubmit={this.handleSubmit}>
+                        &nbsp;&nbsp;&nbsp;
+                        <i className="fas fa-search"></i>
+                        &nbsp;&nbsp;
+                        <input 
+                        type="search" 
+                        placeholder="Try United States..."
+                        />
+                    </form>
+
+                    <Link to={'/search'}>Search</Link>
+                </div>
             )
         } 
         else {
@@ -35,7 +39,7 @@ class SearchBar extends React.Component {
                     &nbsp;&nbsp;
                     <input 
                     type="search" 
-                    placeholder="Try United States"
+                    placeholder="Try United States..."
                     />
                 </form>
             )   
