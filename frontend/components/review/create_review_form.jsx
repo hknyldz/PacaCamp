@@ -9,7 +9,7 @@ class CreateReviewForm extends React.Component {
             spot_id: this.props.match.params.spotId,
             title: '', 
             body: '', 
-        },
+        };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 

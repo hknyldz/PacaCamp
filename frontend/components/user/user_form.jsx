@@ -8,7 +8,7 @@ class UserForm extends React.Component {
             first_name: this.props.currentUser.first_name,
             last_name: this.props.currentUser.last_name,
             email: this.props.currentUser.email
-        }
+        };
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }
