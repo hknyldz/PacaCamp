@@ -8,6 +8,26 @@
     justify-content: space-between;
 }
 
+.search-index .search-info {
+    margin-bottom: 18px;
+}
+
+.search-index .search-info h4 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.search-index .search-info span {
+    font-size: 14px;
+    font-weight: 200;
+    color: #757575;
+}
+
+.search-index .search-info h3 {
+    font-weight: 500;
+}
+
 .search-index-items {
     display: flex;
     justify-content: space-between;
@@ -97,6 +117,8 @@
 }
 
 .search-map {
+    position: sticky !important;
+    top: 80px;
     width: 460px;
     height: 460px;
 }
