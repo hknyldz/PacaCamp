@@ -1,22 +1,25 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import SearchBar from '../search/search_bar';
 
-const NavBar = ({ currentUser, logout, loginLink, signupLink, location, match }) => {
+const NavBar = ({ currentUser, logout, loginLink, signupLink, location}) => {
     let navSearchBar;
     if (location.pathname === '/' || location.pathname.includes('/users')) {
         navSearchBar = null;
     } else {
-        navSearchBar = <div className="navbar-search" >Search</div>
+        navSearchBar = <SearchBar />
     }
     
 
     const protectedNav = () => (
         <nav className="navbar">
-            <div className="pacacamp-container">
-                <Link to="/"><img className="pacacamp" src={window.pacacamp} alt="PacaCamp"/></Link>
-            </div>
+            <div className="pacacamp-search">
+                <div className="pacacamp-container">
+                    <Link to="/"><img className="pacacamp" src={window.pacacamp} alt="PacaCamp"/></Link>
+                </div>
 
-            {navSearchBar}
+                {navSearchBar}
+            </div>
 
             <div className="user-menu">
                 <div className="navlinks">
@@ -55,11 +58,12 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink, location, match })
 
     const authNav = () => (
         <nav className="navbar">
-            <div className="pacacamp-container">
-                <Link to="/"><img className="pacacamp" src={window.pacacamp} alt="PacaCamp" /></Link>
+            <div className="pacacamp-search">
+                <div className="pacacamp-container">
+                    <Link to="/"><img className="pacacamp" src={window.pacacamp} alt="PacaCamp" /></Link>
+                </div>
+                {navSearchBar}
             </div>
-            
-            {navSearchBar}
 
             <div className="guest-menu">
                 <a id="portfolio" href="https://aimyaa.github.io/" target="_blank">
