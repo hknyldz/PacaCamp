@@ -33,30 +33,32 @@ class LoginForm extends React.Component {
         e.preventDefault();
         const formUser = Object.assign({}, this.state);
         this.props.login(formUser).then(() => {
+            this.setState({
+                email: '',
+                password: ''
+            });
+
+            this.props.closeModal();
+
             if (this.props.location.pathname.includes('/login')) {
                 this.props.history.push('/');
             }
-
-            this.props.closeModal();
-        });
-
-        this.setState({
-            email: '',
-            password: ''
         });
     }
 
     handleClick(e) {
         const demoUser = {email: 'happyalpaca@aa.io', password: 'humming'};
         this.props.login(demoUser).then(() => {
+            this.setState({
+                email: '',
+                password: ''
+            });
+
+            this.props.closeModal();
+            
             if (this.props.location.pathname.includes('/login')) {
                 this.props.history.push('/');
             }
-        });
-        this.props.closeModal();
-        this.setState({
-            email: '',
-            password: ''
         });
     }
 

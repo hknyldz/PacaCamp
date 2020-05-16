@@ -31,18 +31,20 @@ class SignupForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const formUser = Object.assign({}, this.state);
-        this.setState({
-            first_name: '',
-            last_name: '',
-            email: '',
-            password: ''
-        });
+    
         this.props.signup(formUser).then(() => {
+            this.setState({
+                first_name: '',
+                last_name: '',
+                email: '',
+                password: ''
+            });
+
+            this.props.closeModal();
+
             if (this.props.location.pathname.includes('/signup')) {
                 this.props.history.push('/');
             }
-
-            this.props.closeModal();
         });
     }
 
