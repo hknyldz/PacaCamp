@@ -1,3 +1,3 @@
 <div align="center">
-  <img width="200px" src="app/assets/images/pacacamp.png" >
+  <img width="250px" src="app/assets/images/pacacamp.png" >
 </div>
