@@ -2,7 +2,7 @@
   <img width="250px" src="app/assets/images/pacacamp.png" >
 </div>
 
-<a href="http://pacacamp.herokuapp.com/#/">Live Site</a>
+[Live site](http://pacacamp.herokuapp.com/#/)
 
 ## Architectures and Technologies
 - React.js
@@ -14,3 +14,4 @@
 - HTML5
 - CSS3
 - Webpack 
+- Heroku
