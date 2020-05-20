@@ -30,6 +30,10 @@
     margin-bottom: 50px;
 }
 
+.user-edit-form .demo-user {
+    margin-bottom: 20px;
+}
+
 .user-edit-form .params {
     display: flex;
     padding: 20px 0px;
@@ -76,6 +80,10 @@
 .user-edit-form .update-btn:hover {
     background-color: #3cc69e;
     cursor: pointer;
+}
+
+.user-edit-form .notice {
+    font-size: 14px;
 }
 
 .user-edit-form  .errors {
