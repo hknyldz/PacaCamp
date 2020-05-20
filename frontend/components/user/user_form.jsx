@@ -32,7 +32,57 @@ class UserForm extends React.Component {
 
     render() {
         if (this.props.currentUser.id !== parseInt(this.props.userId)) return null;
-        if (this.props.currentUser.id === 1) return null;
+        if (this.props.currentUser.id === 1) {
+            return (
+                <div className="user-edit-form">
+                    <div className="left"></div>
+
+                    <div className="body">
+                        <h3>Your profile</h3>
+
+                        <form className="demo-user">
+                            <div className="params border-bottom">
+                                <span>First name</span>
+                                <input
+                                className="right-col"
+                                type="text"
+                                value={this.state.first_name}
+                                readOnly
+                                />
+                            </div>
+
+                            <div className="params border-bottom">
+                                <span>Last name</span>
+                                <div className="right-col">
+                                    <input
+                                    type="text"
+                                    value={this.state.last_name}
+                                    readOnly
+                                    />
+                                    <p>
+                                        Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.state.first_name} ${this.state.last_name[0]}.`}"
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="params">
+                                <span>Email</span>
+                                <input
+                                className="right-col"
+                                type="text"
+                                value={this.state.email}
+                                readOnly
+                                />
+                            </div>
+                        </form>
+
+                        <p className="notice">The demo user does not having profile-editing privileges.</p>
+                    </div>
+
+                    <div className="right"></div>
+                </div>
+            );
+        }
 
         const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
         let errorsClass;
@@ -88,7 +138,7 @@ class UserForm extends React.Component {
 
                 <div className="right"></div>
             </div>
-        )
+        );
     }
 }
 
