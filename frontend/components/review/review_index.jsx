@@ -32,6 +32,7 @@ class ReviewIndex extends React.Component {
                                 users={this.props.users}
                                 currentUserId={this.props.currentUserId}
                                 deleteReview={this.props.deleteReview}
+                                openModal={this.props.openModal}
                             />
                         )}
                     </ul>

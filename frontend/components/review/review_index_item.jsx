@@ -1,7 +1,6 @@
 import React from 'react';
-import { openModal } from '../../actions/modal_actions';
 
-const ReviewIndexItem = ({ review, users, currentUserId, deleteReview }) => {
+const ReviewIndexItem = ({ review, users, currentUserId, deleteReview, openModal }) => {
     const dateOptions = { month: "long", day: "numeric", year: "numeric" };
     const date = new Date(review.created_at).toLocaleDateString("en-US", dateOptions); 
 
@@ -9,7 +8,7 @@ const ReviewIndexItem = ({ review, users, currentUserId, deleteReview }) => {
     if (currentUserId === review.author_id) {
         buttons = (
             <div className="buttons">
-                <button onClick={() => dispatch(openModal('editReview', review.id))}><i className="far fa-edit"></i>&nbsp;Update</button>
+                <button onClick={() => openModal('editReview', review.id)}><i className="far fa-edit"></i>&nbsp;Update</button>
                 <button onClick={() => deleteReview(review.id)}><i className="far fa-trash-alt"></i>&nbsp;Delete</button>
             </div>
         )
@@ -23,7 +22,6 @@ const ReviewIndexItem = ({ review, users, currentUserId, deleteReview }) => {
     } else {
         title = null;
     }
-
 
     return (
         <li className="review-item">

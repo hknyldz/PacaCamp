@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import ReviewIndex from './review_index';
 import { fetchReviews, deleteReview } from '../../actions/review_actions';
+import { openModal } from '../../actions/modal_actions';
 
 const msp = (state) => ({
     reviews: Object.values(state.entities.reviews),
@@ -10,7 +11,8 @@ const msp = (state) => ({
 
 const mdp = (dispatch) => ({
     fetchReviews: (spotId) => dispatch(fetchReviews(spotId)),
-    deleteReview: (reviewId) => dispatch(deleteReview(reviewId))
+    deleteReview: (reviewId) => dispatch(deleteReview(reviewId)),
+    openModal: (modal, reviewId) => dispatch(openModal(modal, reviewId))
 });
 
 
