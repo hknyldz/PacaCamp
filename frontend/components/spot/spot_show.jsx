@@ -17,7 +17,7 @@ class SpotShow extends React.Component {
     }
 
     render() {
-        if ((Object.keys(this.props.users).length < 2)) return null; 
+        if ((Object.keys(this.props.users).length < 21)) return null; 
 
         if (!this.props.spot) return null;
 
