@@ -45,7 +45,7 @@ PacaCamp is a full-stack, single-page Hipcamp clone that helps users discover an
 ### User Authentication
 
 <div>
-  <img width="50%" src="read_me/modals.gif" alt="session modals gif">
+  <img width="75%" src="read_me/modals.gif" alt="session modals gif">
 </div>
 
 - Account creation utilizes BCrypt for password security. 
@@ -55,7 +55,7 @@ PacaCamp is a full-stack, single-page Hipcamp clone that helps users discover an
 ### Listings
 
 <div>
-  <img width="50%" src="read_me/listing.gif" alt="listing gif">
+  <img width="75%" src="read_me/listing.gif" alt="listing gif">
 </div>
 
 - Visitors can browse campsites.
@@ -74,7 +74,7 @@ PacaCamp is a full-stack, single-page Hipcamp clone that helps users discover an
 ### Reviews
 
 <div>
-  <img width="30%" src="read_me/reviews.png" alt="sample review">
+  <img width="45%" src="read_me/reviews.png" alt="sample review">
 </div>
 
 - Visitors can view campsite reviews.
