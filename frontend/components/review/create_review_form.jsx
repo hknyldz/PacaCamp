@@ -5,7 +5,6 @@ class CreateReviewForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            author_id: this.props.currentUserId,
             spot_id: this.props.match.params.spotId,
             title: '', 
             body: '', 
@@ -23,10 +22,12 @@ class CreateReviewForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.action(this.state);
-        this.setState({
-            title: '',
-            body: '', 
+        const review = Object.assign({}, this.state, { author_id: this.props.currentUserId });
+        this.props.action(review).then(() => {
+            this.setState({
+                title: '',
+                body: '', 
+            });
         });
     }
 
