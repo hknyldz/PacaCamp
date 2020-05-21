@@ -28,7 +28,7 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink, location}) => {
                     </a>
 
                     <a id="github" href="https://github.com/aimyaa" target="_blank">
-                        <i className="fab fa-github"></i>&nbsp;Github
+                        <i className="fab fa-github"></i>&nbsp;GitHub
                     </a>
 
                     <a id="linkedin" href="https://www.linkedin.com/in/aimy-yu-11a5681a9/" target="_blank">
@@ -71,7 +71,7 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink, location}) => {
                 </a>
 
                 <a id="github" href="https://github.com/aimyaa" target="_blank">
-                    <i className="fab fa-github"></i>&nbsp;Github
+                    <i className="fab fa-github"></i>&nbsp;GitHub
                 </a>
 
                 <a id="linkedin" href="https://www.linkedin.com/in/aimy-yu-11a5681a9/" target="_blank">
