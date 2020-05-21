@@ -14,7 +14,7 @@ import LoginFormContainer from './session_form/login_form_container';
 import Footer from "./footer";
 
 const App = () => (
-    <div>
+    <>
         <NavBarContainer />
         <Modal />
         <ProtRoute exact path='/users/:userId/trips' component={BookingIndexContainer}></ProtRoute>
@@ -25,7 +25,7 @@ const App = () => (
         <AuthRoute exact path='/signup' component={SignupFormContainer}></AuthRoute>
         <AuthRoute exact path='/login' component={LoginFormContainer}></AuthRoute>
         <Footer />
-    </div>
+    </>
 );
 
 export default App;
