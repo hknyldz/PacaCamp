@@ -8,7 +8,11 @@
 
 # PacaCamp
 
-PacaCamp is a full-stack, single-page Hipcamp clone that helps users discover and book unique outdoor experiences. 
+PacaCamp is a full-stack Hipcamp clone that helps users discover and book unique outdoor experiences. 
+
+<div>
+  <img width="75%" src="read_me/splash.png" alt="splash page screenshot">
+</div>
 
 ## Table of Contents 
 
@@ -48,7 +52,7 @@ PacaCamp is a full-stack, single-page Hipcamp clone that helps users discover an
   <img width="75%" src="read_me/modals.gif" alt="session modals gif">
 </div>
 
-- Account creation utilizes BCrypt for password security. 
+- Account creation leverages BCrypt for password security. 
 - Site employs responsive modal forms for login and signup.
 - Visitors are unable to access certain features without logging in (i.e. creating and deleting reservations, writing reviews).
 
@@ -69,18 +73,29 @@ PacaCamp is a full-stack, single-page Hipcamp clone that helps users discover an
 
 - Booking form uses DayPicker API to enable users to easily select trip start and end dates.
 - Visitors are prompted to log in, if they are not already, in order to make reservations.
+</br></br>
+
+<div>
+  <img width="75%" src="read_me/trips.gif" alt="trips gif">
+</div>
+
 - Users can create, view, and cancel their own reservations.
 
 ### Reviews
 
 <div>
-  <img width="45%" src="read_me/reviews.png" alt="sample review">
+  <img width="60%" src="read_me/reviews.png" alt="sample review">
 </div>
 
 - Visitors can view campsite reviews.
 - Users can leave, edit, and delete their own reviews.
 
 ### Search
+
+<div>
+  <img width="85%" src="read_me/search.gif" alt="search gif">
+</div>
+
 - Visitors can search campsites by location.
 - Google Maps is implemented on search.
 
