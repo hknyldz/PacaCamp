@@ -35,7 +35,7 @@ class BookingForm extends React.Component {
             total = 0;
         }
 
-        const booking = Object.assign({}, this.state, { total, guest_id: this.props.currentUserId })
+        const booking = Object.assign({}, this.state, { total, guest_id: this.props.currentUserId });
 
         if (!this.props.currentUserId) {
             this.props.openModal('login');
