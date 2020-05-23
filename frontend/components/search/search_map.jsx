@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import { withRouter } from "react-router-dom";
 import MarkerManager from '../../util/marker_manager';
 
 class SearchMap extends React.Component {
@@ -8,17 +7,23 @@ class SearchMap extends React.Component {
         this.renderMap();
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.countryId !== this.props.countryId) {
+            this.renderMap();
+        }
+    }
+
     handleMarkerClick(spot) {
         this.props.history.push(`/spots/${spot.id}`);
     }
 
     renderMap() {
-        const center = { lat: 39.8283, lng: -98.5795 };
+        const center = { lat: this.props.lat, lng: this.props.lng };                                                        
 
         const mapOptions = {
             center,
             mapTypeId: 'terrain',
-            zoom: 3
+            zoom: 5
         };
 
         this.map = new google.maps.Map(this.mapNode, mapOptions);
@@ -58,4 +63,4 @@ class SearchMap extends React.Component {
     }
 }
 
-export default withRouter(SearchMap);
+export default SearchMap;
