@@ -21,7 +21,7 @@ const App = () => (
         <ProtRoute exact path='/users/:userId' component={EditUserFormContainer}></ProtRoute>
         <Route exact path='/' component={Splash}></Route>
         <Route exact path='/spots/:spotId' component={SpotShowContainer}></Route>
-        <Route exact path='/search/:countryId' component={SearchIndexContainer}></Route>
+        <Route exact path='/discover/:countryId' component={SearchIndexContainer}></Route>
         <AuthRoute exact path='/signup' component={SignupFormContainer}></AuthRoute>
         <AuthRoute exact path='/login' component={LoginFormContainer}></AuthRoute>
         <Footer />
