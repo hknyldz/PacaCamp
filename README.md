@@ -33,9 +33,9 @@ PacaCamp is a full-stack Hipcamp clone that helps users discover and book unique
 - React for user interface
 - Redux for state management
 - Git for version control
-- AWS S3
-- Google Maps API
-- DayPicker API
+- [AWS S3](https://aws.amazon.com/s3/ "AWS S3")
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial "Google Maps API")
+- [DayPicker API](https://react-day-picker.js.org/ "DayPicker API")
 
 ## Languages 
 
