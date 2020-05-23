@@ -62,7 +62,7 @@ class BookingIndex extends React.Component {
                     <div className="bottom">
                         <h3>Trusted PacaCamper</h3>
                         <p>
-                            <i className="fas fa-check-circle"></i>
+                            <i className="far fa-check-circle"></i>
                             &nbsp;
                             <span className="email">Email address</span>
                             </p>
