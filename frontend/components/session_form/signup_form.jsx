@@ -24,7 +24,7 @@ class SignupForm extends React.Component {
 
     handleInput(type) {
         return (e) => {
-            this.setState({ [type]: e.target.value })
+            this.setState({ [type]: e.currentTarget.value })
         }
     }
 
