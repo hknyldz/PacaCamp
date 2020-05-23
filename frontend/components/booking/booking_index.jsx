@@ -39,7 +39,7 @@ class BookingIndex extends React.Component {
                             <div className="name-details">
                                 <div>
                                     <div className="name">{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}</div>
-                                    <div>
+                                    <div className="check-host">
                                         <i id="check-icon" className="fas fa-check-circle fa-xs" aria-hidden="true"></i>
                                         &nbsp;
                                         <span className="host">Host</span>
