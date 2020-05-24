@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
+import { withRouter } from 'react-router-dom';
 import MarkerManager from '../../util/marker_manager';
 
 class SearchMap extends React.Component {
@@ -63,4 +64,4 @@ class SearchMap extends React.Component {
     }
 }
 
-export default SearchMap;
+export default withRouter(SearchMap);

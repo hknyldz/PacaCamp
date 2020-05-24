@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from "react-router-dom";
+import { withRouter } from 'react-router-dom';
 
 const SearchIndexItem = ({ spot, history }) => {
     let lodge_mode;
