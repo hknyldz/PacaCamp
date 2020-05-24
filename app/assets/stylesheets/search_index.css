@@ -10,6 +10,7 @@
 
 .search-index .search-info {
     margin-bottom: 18px;
+    width: 790px;
 }
 
 .search-index .search-info h4 {
@@ -25,7 +26,19 @@
 }
 
 .search-index .search-info h3 {
+    font-size: 17px;
     font-weight: 500;
+}
+
+.search-index .search-info h5 {
+    line-height: 1.42;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fdf0ef;
+    border-color: transparent;
+    color: #c44841;
+    padding: 15px 14px;
+    margin-top: 30px;
 }
 
 .search-index-items {
