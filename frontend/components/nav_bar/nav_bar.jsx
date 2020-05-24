@@ -38,8 +38,6 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink, location}) => {
                     <a id="angellist" href="https://angel.co/u/aimy-yu" target="_blank">
                         <i className="fab fa-angellist"></i>&nbsp;AngelList
                     </a>
-
-                    <Link to={`/users/${currentUser.id}/trips`}>Trips</Link>
                 </div>
 
                 <div className="dropdown-container">
@@ -48,8 +46,11 @@ const NavBar = ({ currentUser, logout, loginLink, signupLink, location}) => {
                     <ul className="dropdown-menu">
                         <li><Link to={`/users/${currentUser.id}`} className="dropdown-item">Manage account</Link></li>
                         <li className="divider"></li>
-                        <li><span
-                        className="dropdown-item" onClick={logout}>Log out</span></li>    
+                        <li><Link to={`/users/${currentUser.id}/trips`} className="dropdown-item">Trips</Link></li>
+                        <li className="divider"></li>
+                        <li>
+                            <span className="dropdown-item" onClick={logout}>Log out</span>
+                        </li>    
                     </ul>
                 </div>
             </div>
