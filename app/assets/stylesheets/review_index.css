@@ -24,7 +24,7 @@
 }
 
 .review-index .fa-thumbs-up {
-    color: white;
+    color: #fff;
     font-size: 0.6em;
 }
 
@@ -100,7 +100,7 @@
 
 .review-item .buttons button {
     background-color: #40d9ac;
-    color: white;
+    color: #fff;
     padding: 14px 10px;
     margin-right: 15px;
     font-size: 13px;
