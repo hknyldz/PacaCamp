@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SearchBar from './search/search_bar';
 import SpotIndexContainer from './spot/spot_index_container';
 
@@ -19,7 +20,7 @@ class Splash extends React.Component {
                     <h1>Find yourself outside.</h1>
                     <div>
                         <h2>
-                            Book unique camping experiences on over <span>300,000</span> campsites, cabins, RV parks, public parks and more.
+                            Book unique camping experiences on <span>private and public</span> campsites, cabins, RV parks, public parks and more.
                         </h2>
                     </div>
                 </div>
@@ -48,7 +49,7 @@ class Splash extends React.Component {
                     <div className="palm-eye">
                         <img src={window.palm_eye} alt="palm eye" />
                         <h2>Unlocking access to incredible new places to camp.</h2>
-                        <a href="">Discover camps</a>
+                        <Link to="/discover/8">Discover camps</Link>
                     </div>
                 </div>
             </div>
