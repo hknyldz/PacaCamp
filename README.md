@@ -10,10 +10,6 @@
 
 PacaCamp is a full-stack Hipcamp clone that helps users discover and book unique outdoor experiences. 
 
-<div>
-  <img width="75%" src="read_me/splash.png" alt="splash page screenshot">
-</div>
-
 ## Table of Contents 
 
 - [Technologies](#technologies)
