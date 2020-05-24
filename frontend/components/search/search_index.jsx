@@ -63,21 +63,40 @@ class SearchIndex extends React.Component {
                 lng = -114.048333;
                 continent = 'North America';
                 break; 
-            // default: 
+            default: 
+                country = '';
+                lat = 25;
+                lng = -71;
+                continent = '';
         }
 
         let the;
         the = country === 'United States' ? 'the' : null;
 
-        const filteredSpots = this.props.spots.filter( spot => spot.country === country);
+        let searchInfo;
+        if (country) {
+            searchInfo = (
+                <div className="search-info">
+                    <h4>{continent} — <span>{country}</span></h4>
+                    <h3>The best camping in {the} {country}.</h3>
+                </div>
+            );
+        } else {
+            searchInfo = (
+                <div className="search-info">
+                    <h5>Hmmm we couldn't find any listings that match your search criteria.
+                        Try zooming the map out or search again.
+                    </h5>
+                </div>
+            );
+        }
+
+        const filteredSpots = this.props.spots.filter(spot => spot.country === country);
 
         return (
             <div className="search-index">
                 <div className="info-items">
-                    <div className="search-info">
-                        <h4>{continent} — <span>{country}</span></h4>
-                        <h3>The best camping in {the} {country}.</h3>
-                    </div>
+                    {searchInfo}
 
                     <div className="search-index-items">
                         {filteredSpots.map((spot) =>
