@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from "react-router-dom";
+import ClickOutHandler from 'react-onclickout';
 
 class SearchBar extends React.Component { 
 
@@ -12,12 +13,19 @@ class SearchBar extends React.Component {
         };
 
         this.handleClick = this.handleClick.bind(this);
+        this.handleClickOut = this.handleClickOut.bind(this);
         this.handleInput = this.handleInput.bind(this);
     }
 
     handleClick() {
         this.setState({
             dropdown: true
+        });
+    }
+
+    handleClickOut() {
+        this.setState({
+            dropdown: false
         });
     }
 
@@ -68,7 +76,12 @@ class SearchBar extends React.Component {
                 <li 
                 className="search-result"
                 key={country.id} 
-                onClick={() => this.props.history.push(`/discover/${country.id}`)}
+                onClick={() => {
+                    this.props.history.push(`/discover/${country.id}`);
+                    this.setState({
+                        query: ''
+                    });
+                }}
                 >   
                     <div className="i-container">
                         <i className="fas fa-map-marker-alt"></i>
@@ -91,22 +104,22 @@ class SearchBar extends React.Component {
             searchBar = (
                 <div className="splash-search">
                     <div className="bar-container">
-                        <div className="splash-search-bar">
-                            &nbsp;&nbsp;&nbsp;
-                            <i className="fas fa-search"></i>
-                            &nbsp;&nbsp;
-                            <input 
-                            type="search" 
-                            value={this.state.query}
-                            placeholder="Try United States, South Korea..."
-                            onClick={this.handleClick}
-                            onChange={this.handleInput} 
-                            />
-                        </div>
+                        <ClickOutHandler onClickOut={this.handleClickOut}>
+                            <div className="splash-search-bar">
+                                &nbsp;&nbsp;&nbsp;
+                                <i className="fas fa-search"></i>
+                                &nbsp;&nbsp;
+                                <input 
+                                type="search" 
+                                value={this.state.query}
+                                placeholder="Try United States, South Korea..."
+                                onClick={this.handleClick}
+                                onChange={this.handleInput} 
+                                />
+                            </div>
+                        </ClickOutHandler>
 
                         <ul id="search-results">
-                            {/* <li>hi</li>
-                            <li>bi</li> */}
                             {this.mapResultsToLi()}
                         </ul>
                     </div>
@@ -119,22 +132,22 @@ class SearchBar extends React.Component {
             searchBar = (
                 <div className="navbar-search">
                     <div className="bar-container">
-                        <div className="navbar-search-bar">
-                            &nbsp;&nbsp;
-                            <i className="fas fa-search"></i>
-                            &nbsp;&nbsp;
-                            <input 
-                            type="search" 
-                            value={this.state.query}
-                            placeholder="Try United States, South Korea..."
-                            onClick={this.handleClick}
-                            onChange={this.handleInput} 
-                            />
-                        </div>
+                        <ClickOutHandler onClickOut={this.handleClickOut}>
+                            <div className="navbar-search-bar">
+                                &nbsp;&nbsp;
+                                <i className="fas fa-search"></i>
+                                &nbsp;&nbsp;
+                                <input 
+                                type="search" 
+                                value={this.state.query}
+                                placeholder="Try United States, South Korea..."
+                                onClick={this.handleClick}
+                                onChange={this.handleInput} 
+                                />
+                            </div>
+                        </ClickOutHandler>
 
                         <ul id="search-results">
-                            {/* <li>hi</li>
-                            <li>bi</li> */}
                             {this.mapResultsToLi()}
                         </ul>
                     </div>
