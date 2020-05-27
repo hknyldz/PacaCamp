@@ -7,7 +7,8 @@ class UserForm extends React.Component {
             id: this.props.currentUser.id,
             first_name: this.props.currentUser.first_name,
             last_name: this.props.currentUser.last_name,
-            email: this.props.currentUser.email
+            email: this.props.currentUser.email,
+            message: false
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,7 +28,10 @@ class UserForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.updateUser(this.state);
+        this.props.updateUser(this.state).then(
+            () => this.setState({ message: true }), 
+            () => this.setState({ message: false })
+        );
     }
 
     render() {
@@ -38,7 +42,11 @@ class UserForm extends React.Component {
                     <div className="left"></div>
 
                     <div className="body">
-                        <h3>Your profile</h3>
+                        <h3>Edit your profile</h3>
+                        <h4>
+                            <i className="fas fa-lock"></i>
+                            &nbsp;Personal information
+                        </h4>
 
                         <form className="demo-user">
                             <div className="labelled-input">
@@ -94,6 +102,13 @@ class UserForm extends React.Component {
             );
         }
 
+        let successMessage;
+        if (this.state.message) {
+            successMessage = <ul className="success-message"><li><i className="fas fa-check"></i>&nbsp;Success! We updated your profile.</li></ul>;
+        } else {
+            successMessage = null;
+        }
+
         const errors = this.props.errors.map((error, i) => <li key={i}>Your {error[0].toLowerCase() + error.slice(1)}</li>)
         let errorsClass;
         errorsClass = errors.length ? "errors" : null;
@@ -106,7 +121,14 @@ class UserForm extends React.Component {
                 <div className="body">
                     <h3>Edit your profile</h3>
 
+                    {successMessage}
                     {errorsUl}
+
+                    <h4>
+                        <i className="fas fa-lock"></i>
+                        &nbsp;Personal information
+                    </h4>
+                    
                     <form>
                         <div className="labelled-input">
                             <div className="params border-bottom">
