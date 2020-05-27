@@ -34,7 +34,20 @@
     margin-bottom: 20px;
 }
 
+.user-edit-form .labelled-input {
+    position: relative;
+}
+
+.labelled-input .fa-lock {
+    position: absolute;
+    top: 20px;
+    right: 13px;
+    color: #ebebeb;
+    font-size: 13px;
+}
+
 .user-edit-form .params {
+    width: 100%;
     display: flex;
     padding: 20px 0px;
 }
@@ -45,6 +58,7 @@
 
 .user-edit-form .right-col {
     width: 65%;
+    padding: 0px 16px 0px 0px;
 }
 
 .user-edit-form .params > span {

@@ -41,40 +41,48 @@ class UserForm extends React.Component {
                         <h3>Your profile</h3>
 
                         <form className="demo-user">
-                            <div className="params border-bottom">
-                                <span>First name</span>
-                                <input
-                                className="right-col"
-                                type="text"
-                                value={this.state.first_name}
-                                readOnly
-                                />
-                            </div>
-
-                            <div className="params border-bottom">
-                                <span>Last name</span>
-                                <div className="right-col">
-                                    <div className="last-name">
-                                        <input
-                                        type="text"
-                                        value={this.state.last_name}
-                                        readOnly
-                                        />
-                                    </div>
-                                    <p>
-                                        Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}"
-                                    </p>
+                            <div className="labelled-input">
+                                <div className="params border-bottom">
+                                    <span>First name</span>
+                                    <input
+                                    className="right-col"
+                                    type="text"
+                                    value={this.state.first_name}
+                                    readOnly
+                                    />
                                 </div>
                             </div>
 
-                            <div className="params">
-                                <span>Email</span>
-                                <input
-                                className="right-col"
-                                type="text"
-                                value={this.state.email}
-                                readOnly
-                                />
+                            <div className="labelled-input">
+                                <div className="params border-bottom">
+                                    <span>Last name</span>
+                                    <div className="right-col">
+                                        <div className="last-name">
+                                            <input
+                                            type="text"
+                                            value={this.state.last_name}
+                                            readOnly
+                                            />
+                                        </div>
+                                        <p>
+                                            Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}"
+                                        </p>
+                                    </div>
+                                </div>
+                                <i className="fas fa-lock"></i>
+                            </div>
+
+                            <div className="labelled-input">
+                                <div className="params">
+                                    <span>Email</span>
+                                    <input
+                                    className="right-col"
+                                    type="text"
+                                    value={this.state.email}
+                                    readOnly
+                                    />
+                                </div>
+                                <i className="fas fa-lock"></i>
                             </div>
                         </form>
 
@@ -100,42 +108,50 @@ class UserForm extends React.Component {
 
                     {errorsUl}
                     <form>
-                        <div className="params border-bottom">
-                            <span>First name</span>
-                            <input 
-                            className="right-col"
-                            type="text" 
-                            placeholder="First name"
-                            value={this.state.first_name}
-                            onChange={this.handleInput('first_name')} 
-                            />
-                        </div>
-
-                        <div className="params border-bottom">
-                            <span>Last name</span>
-                            <div className="right-col">
-                                <div className="last-name">
-                                    <input 
-                                    type="text"
-                                    placeholder="Last name"
-                                    value={this.state.last_name} 
-                                    onChange={this.handleInput('last_name')} 
-                                    />
-                                </div>
-                                <p>
-                                    Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}"
-                                </p>
+                        <div className="labelled-input">
+                            <div className="params border-bottom">
+                                <span>First name</span>
+                                <input 
+                                className="right-col"
+                                type="text" 
+                                placeholder="First name"
+                                value={this.state.first_name}
+                                onChange={this.handleInput('first_name')} 
+                                />
                             </div>
                         </div>
 
-                        <div className="params">
-                            <span>Email</span>
-                            <input 
-                            className="right-col"
-                            type="text" 
-                            value={this.state.email} 
-                            onChange={this.handleInput('email')} 
-                            />
+                        <div className="labelled-input">
+                            <div className="params border-bottom">
+                                <span>Last name</span>
+                                <div className="right-col">
+                                    <div className="last-name">
+                                        <input 
+                                        type="text"
+                                        placeholder="Last name"
+                                        value={this.state.last_name} 
+                                        onChange={this.handleInput('last_name')} 
+                                        />
+                                    </div>
+                                    <p>
+                                        Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}"
+                                    </p>
+                                </div>
+                            </div>
+                            <i className="fas fa-lock"></i>
+                        </div>
+
+                        <div className="labelled-input">
+                            <div className="params">
+                                <span>Email</span>
+                                <input 
+                                className="right-col"
+                                type="text" 
+                                value={this.state.email} 
+                                onChange={this.handleInput('email')} 
+                                />
+                            </div>
+                            <i className="fas fa-lock"></i>
                         </div>
                     </form>
 
