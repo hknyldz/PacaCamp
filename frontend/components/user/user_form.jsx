@@ -86,7 +86,7 @@ class UserForm extends React.Component {
             );
         }
 
-        const errors = this.props.errors.map((error, i) => <li key={i}>{error}</li>)
+        const errors = this.props.errors.map((error, i) => <li key={i}>Your {error[0].toLowerCase() + error.slice(1)}</li>)
         let errorsClass;
         errorsClass = errors.length ? "errors" : null;
         const errorsUl = <ul className={errorsClass}>{errors}</ul>;
