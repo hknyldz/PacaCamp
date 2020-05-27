@@ -1,11 +1,12 @@
 .user-edit-form {
     position: relative;
-    top: 115px;
+    top: 80px;
     display: flex;
     border-top: 1px solid #ebebeb;
 }
 
-.user-edit-form .left, .user-edit-form .right {
+.user-edit-form .left, 
+.user-edit-form .right {
     width: 20%;
     background-color: #f9f9f9;;
     padding: 50px 0px;
@@ -13,6 +14,7 @@
 
 .user-edit-form .body {
     width: 60%;
+    min-width: 500px;
     padding: 50px;
     border-right: 1px solid #ebebeb;
     border-left: 1px solid #ebebeb;
@@ -22,7 +24,19 @@
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
+}
+
+.user-edit-form h4 {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.user-edit-form .fa-lock {
+    font-size: 17.5px;
 }
 
 .user-edit-form form {
@@ -38,7 +52,7 @@
     position: relative;
 }
 
-.labelled-input .fa-lock {
+.user-edit-form .labelled-input .fa-lock {
     position: absolute;
     top: 20px;
     right: 13px;
@@ -52,7 +66,7 @@
     padding: 20px 0px;
 }
 
-.user-edit-form .border-bottom{
+.user-edit-form .border-bottom {
     border-bottom: 1px solid #ebebeb;
 }
 
@@ -113,23 +127,53 @@
     font-size: 14px;
 }
 
-.user-edit-form  .errors {
+.user-edit-form .success-message,
+.user-edit-form .errors {
     padding: 15px 14px;
     margin-bottom: 22px;
-    background-color: #fdf0ef;
     border-color: transparent;
     border-radius: 2px;
     text-align: left;
     width: 100%; 
+}
+
+.user-edit-form .success-message {
+    background-color: #D7F3F0;
+}
+
+.user-edit-form .success-message li,
+.user-edit-form .errors li {
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.7px;
+} 
+
+.user-edit-form .success-message li {
+    color: #3CC69E;
+}
+
+.user-edit-form .fa-check {
+    font-size: 16px;
+}
+
+.user-edit-form  .errors {
+    /* padding: 15px 14px; */
+    /* margin-bottom: 22px; */
+    background-color: #fdf0ef;
+    /* border-color: transparent; */
+    /* border-radius: 2px; */
+    /* text-align: left; */
+    /* width: 100%;  */
     list-style-type: disc;
     list-style-position: inside;
 }
 
 .user-edit-form .errors li {
     color: #c44841;
-    font-size: 14.5px;
+    /* font-size: 14.5px;
     font-weight: 400;
     line-height: 1.8;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.7px; */
 } 
 
