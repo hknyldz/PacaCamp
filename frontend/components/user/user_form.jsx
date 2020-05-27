@@ -54,13 +54,15 @@ class UserForm extends React.Component {
                             <div className="params border-bottom">
                                 <span>Last name</span>
                                 <div className="right-col">
-                                    <input
-                                    type="text"
-                                    value={this.state.last_name}
-                                    readOnly
-                                    />
+                                    <div className="last-name">
+                                        <input
+                                        type="text"
+                                        value={this.state.last_name}
+                                        readOnly
+                                        />
+                                    </div>
                                     <p>
-                                        Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.state.first_name} ${this.state.last_name[0]}.`}"
+                                        Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}"
                                     </p>
                                 </div>
                             </div>
@@ -103,6 +105,7 @@ class UserForm extends React.Component {
                             <input 
                             className="right-col"
                             type="text" 
+                            placeholder="First name"
                             value={this.state.first_name}
                             onChange={this.handleInput('first_name')} 
                             />
@@ -111,13 +114,16 @@ class UserForm extends React.Component {
                         <div className="params border-bottom">
                             <span>Last name</span>
                             <div className="right-col">
-                                <input 
-                                type="text"
-                                value={this.state.last_name} 
-                                onChange={this.handleInput('last_name')} 
-                                />
+                                <div className="last-name">
+                                    <input 
+                                    type="text"
+                                    placeholder="Last name"
+                                    value={this.state.last_name} 
+                                    onChange={this.handleInput('last_name')} 
+                                    />
+                                </div>
                                 <p>
-                                    Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.state.first_name} ${this.state.last_name[0]}.`}"
+                                    Full names are only shared privately between PacaCampers and Hosts with confirmed bookings. Publicly around PacaCamp your name will be displayed as "{`${this.props.currentUser.first_name} ${this.props.currentUser.last_name[0]}.`}"
                                 </p>
                             </div>
                         </div>
