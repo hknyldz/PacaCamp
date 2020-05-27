@@ -66,6 +66,10 @@
     letter-spacing: 0.4px;
 } 
 
+.user-edit-form .last-name > input {
+    width: 100%;
+}
+
 .user-edit-form .update-btn {
     padding: 15px 20px;
     line-height: 1.8;
