@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import SearchBar from '../search/search_bar';
 
-const NavBar = ({ currentUser, logout, loginLink, signupLink, location}) => {
+const NavBar = ({ currentUser, logout, loginLink, signupLink, location }) => {
     let navSearchBar;
     if (location.pathname === '/' || location.pathname.includes('/users')) {
         navSearchBar = null;
