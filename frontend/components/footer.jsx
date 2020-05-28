@@ -1,6 +1,9 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = ({ location }) => {
+    if (location.pathname.includes('/users') && !location.pathname.includes('/trips')) return null;
+    
     return (
         <div className="footer">
             
@@ -66,4 +69,4 @@ const Footer = () => {
     )
 };
 
-export default Footer;
+export default withRouter(Footer);

@@ -31,6 +31,10 @@
     font-size: 22px;
 }
 
+.guest-menu {
+    min-width: 292px;
+}
+
 .guest-menu a {
     padding: 5px;
     padding-bottom: 2px;
@@ -52,6 +56,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 285px;
 }
 
 .navlinks a {

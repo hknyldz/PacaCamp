@@ -32,7 +32,7 @@
 
 
 .review-form input::placeholder, .review-form textarea::placeholder {
-    color: #757575;
+    color: #999;
     font-weight: 100;
 }
 
