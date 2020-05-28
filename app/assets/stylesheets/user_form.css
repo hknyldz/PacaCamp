@@ -5,6 +5,10 @@
     border-top: 1px solid #ebebeb;
 }
 
+.user-edit-form .vertical-space {
+    height: 350px;
+}
+
 .user-edit-form .left, 
 .user-edit-form .right {
     width: 20%;

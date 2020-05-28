@@ -95,6 +95,7 @@ class UserForm extends React.Component {
                         </form>
 
                         <p className="notice">The demo user does not having profile-editing privileges.</p>
+                        <div className="vertical-space"></div>
                     </div>
 
                     <div className="right"></div>
@@ -128,7 +129,7 @@ class UserForm extends React.Component {
                         <i className="fas fa-lock"></i>
                         &nbsp;Personal information
                     </h4>
-                    
+
                     <form>
                         <div className="labelled-input">
                             <div className="params border-bottom">
@@ -178,6 +179,7 @@ class UserForm extends React.Component {
                     </form>
 
                     <button className="update-btn" type="submit" onClick={this.handleSubmit}>Save changes</button>
+                    <div className="vertical-space"></div>
                 </div>
 
                 <div className="right"></div>
