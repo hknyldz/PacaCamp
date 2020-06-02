@@ -1,9 +1,9 @@
 <div align="center">
-  <img width="250px" src="app/assets/images/pacacamp.png" alt="PacaCamp logo">
+  <a href="http://pacacamp.herokuapp.com/#/"><img width="250px" src="app/assets/images/pacacamp.png" alt="PacaCamp logo"></a>
 </div>
 
 <div align="center">
-    <a href="http://pacacamp.herokuapp.com/#/">Live site</a>
+  <a href="http://pacacamp.herokuapp.com/#/">Live site</a>
 </div>
 
 # PacaCamp
